@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ListViewEjemplo1_Ventanas.jnlp">
+  <information>
+    <title>ListViewEjemplo1_Ventanas</title>
+    <vendor>jsanchez</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ListViewEjemplo1_Ventanas.jar" size="8813" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="aplicacion.ListViewEjemplo1"  name="ListViewEjemplo1_Ventanas" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,12 @@
+El zip contiene el esqueleto de un proyecto JavaFX para
+la entrega 1 opcional. La interfaz de usuario está completada
+y algunos componentes están inyectados en el controlador.
+Debe añadir el código de manejo de eventos (i.e cuando
+el usuario pulse sobre un botón). Este tipo de evento
+es un evento de acción, puede emplear un único manejador
+para todos los botones del juego y dentro detectar qué
+botón ha sido pulsado.
+Probado con Netbeans 8.2, Java 1.8 y la versión de JavaFX
+incluida en el jdk 1.8
+Utilicen la opción, dentro de netbeans, de import proyect
+from zip.

@@ -1,0 +1,540 @@
+1
+00:00:00,590 --> 00:00:05,520
+In this video a set of operations on formal
+ languages is intuitively presented 
+
+2
+00:00:03,680 --> 00:00:05,520
+of operations on formal languages
+ is intuitively presented 
+
+3
+00:00:06,350 --> 00:00:09,220
+it is important to note the intuitive
+ nature of the explanation
+
+4
+00:00:09,840 --> 00:00:13,870
+and that the study of these operations
+implies to consult the bibliography
+
+5
+00:00:14,380 --> 00:00:15,940
+and the rest of
+available material.
+
+6
+00:00:18,670 --> 00:00:20,830
+The first operation presented
+ is the quotient of a
+
+7
+00:00:20,830 --> 00:00:22,380
+language with
+respect to a word
+
+8
+00:00:23,580 --> 00:00:26,070
+given a sigma alphabet
+and a language over it
+
+9
+00:00:26,570 --> 00:00:30,340
+a way of seeing at the quotient
+ of L respect to a word u
+
+10
+00:00:31,180 --> 00:00:34,730
+is to consider exclusively
+ the words of language
+
+11
+00:00:35,280 --> 00:00:37,450
+that have u as
+ a prefix,
+
+12
+00:00:39,390 --> 00:00:43,530
+in such a way that the ratio of L
+to the word u can be described
+
+13
+00:00:43,920 --> 00:00:48,050
+as the set of all suffixes
+ of u in the words in L
+
+14
+00:00:50,380 --> 00:00:52,780
+Another equivalent description
+ of this operation
+
+15
+00:00:53,690 --> 00:00:56,570
+is to see the quotient of
+ L respect to a word u
+
+16
+00:00:57,100 --> 00:01:00,670
+as the set of all words such
+that its concatenation to
+
+17
+00:01:00,670 --> 00:01:04,840
+u on the right. result in a
+word that belongs to L.
+
+18
+00:01:06,980 --> 00:01:10,760
+As a first example to illustrate the
+behavior of the operation quotient
+
+19
+00:01:11,260 --> 00:01:14,220
+let us consider the language of
+words over the alphabet a, b
+
+20
+00:01:14,570 --> 00:01:16,250
+which contains
+the segment aa,
+
+21
+00:01:17,570 --> 00:01:20,310
+the quotient of this language
+ respect to the word aa
+
+22
+00:01:20,720 --> 00:01:23,540
+equals the language
+ a, b star
+
+23
+00:01:24,520 --> 00:01:27,760
+whereas the quotient of L1
+respect to the word bba
+
+24
+00:01:28,270 --> 00:01:30,350
+can be seen as the union
+ of two languages:
+
+25
+00:01:31,340 --> 00:01:35,230
+the one of word over the alphabet
+a,b beginning with b, and that
+
+26
+00:01:35,230 --> 00:01:36,880
+contains segment aa
+
+27
+00:01:37,830 --> 00:01:42,450
+united to the language of words over
+the alphabet a, b beginning with a.
+
+28
+00:01:44,680 --> 00:01:48,130
+As a second example let us consider
+ the language of words over
+
+29
+00:01:48,130 --> 00:01:51,660
+the alphabet a, b containing
+ an odd number of as
+
+30
+00:01:53,300 --> 00:01:56,270
+the quotient of this language
+ respect to the word bab
+
+31
+00:01:57,100 --> 00:02:00,280
+is equal to the set of words
+over the same alphabet that
+
+32
+00:02:00,280 --> 00:02:01,920
+contain an even
+number of as
+
+33
+00:02:02,590 --> 00:02:06,620
+whereas the quotient of the language
+ L2 with respect to the word b
+
+34
+00:02:06,970 --> 00:02:09,400
+is equal to the
+same language L2.
+
+35
+00:02:10,600 --> 00:02:15,050
+We now consider the operations
+homomorphism and inverse homomorphism.
+
+36
+00:02:16,030 --> 00:02:19,580
+As a first step it is necessary to
+define the homomorphism operation
+
+37
+00:02:20,430 --> 00:02:26,550
+which is considered as any total
+function h from sigma on delta star.
+
+38
+00:02:27,050 --> 00:02:33,790
+that is, a function h such that
+each symbol of the alphabet sigma
+
+39
+00:02:34,000 --> 00:02:37,240
+is mapped into a word over
+ the alphabet delta.
+
+40
+00:02:38,110 --> 00:02:39,890
+As an example of
+ homomorphism
+
+41
+00:02:40,460 --> 00:02:47,710
+let us consider the alphabets sigma equal
+ to a, b and delta equal to zero, one;
+
+42
+00:02:48,680 --> 00:02:53,120
+an homomorphism operation can be
+defined by considering the image
+
+43
+00:02:53,350 --> 00:02:56,460
+of a as the word 00
+
+44
+00:02:57,350 --> 00:03:01,550
+and the image of b according the
+ homomorphism as the word 1.
+
+45
+00:03:03,110 --> 00:03:05,590
+The extension of the homomorphism
+ operation to words
+
+46
+00:03:05,600 --> 00:03:09,300
+is done by applying the homomorphism
+ to every symbol of the word
+
+47
+00:03:10,220 --> 00:03:14,330
+so, for example, the
+homomorphism of the word
+
+48
+00:03:15,110 --> 00:03:21,110
+abba consists on first considering
+ the homomorphism of a, 00
+
+49
+00:03:21,770 --> 00:03:24,230
+then the homomorphism
+ of b, 1
+
+50
+00:03:24,840 --> 00:03:27,370
+again the homomorphism
+ of b, 1
+
+51
+00:03:28,080 --> 00:03:30,980
+and finally the homomorphism
+ of the symbol a, 00.
+
+52
+00:03:31,990 --> 00:03:36,700
+Similarly the homomorphism
+of the word baba is equal
+
+53
+00:03:36,860 --> 00:03:40,100
+to the word 100100.
+
+54
+00:03:41,850 --> 00:03:45,870
+Thus, given an homomorphism
+from sigma in delta star
+
+55
+00:03:46,710 --> 00:03:48,540
+and a language over
+the alphabet sigma,
+
+56
+00:03:49,260 --> 00:03:52,580
+we will consider the set of
+words over the alphabet delta
+
+57
+00:03:53,260 --> 00:03:56,900
+such that, they are an image, according
+ to the homomorphism, of some
+
+58
+00:03:56,900 --> 00:03:58,320
+word in the language L.
+
+59
+00:04:00,030 --> 00:04:03,700
+The set of homomorphisms
+of all the words of L
+
+60
+00:04:03,790 --> 00:04:06,430
+is what is known as the
+homomorphism of the language.
+
+61
+00:04:07,250 --> 00:04:09,740
+An example to illustrate the
+behavior of the homomorphism
+
+62
+00:04:09,740 --> 00:04:13,330
+operation of a language we
+ consider the language
+
+63
+00:04:13,330 --> 00:04:15,740
+of words over the
+alphabet a, b, c
+
+64
+00:04:16,620 --> 00:04:21,800
+such that contain as many symbols
+ a as symbols b and c added
+
+65
+00:04:22,780 --> 00:04:28,350
+being for example the homomorphism the
+ one that associates the symbol a
+
+66
+00:04:28,790 --> 00:04:32,750
+to the word 0, the symbol
+ b to the empty word,
+
+67
+00:04:33,300 --> 00:04:35,600
+and the symbol c
+to the word one
+
+68
+00:04:36,370 --> 00:04:40,560
+the homomorphism of the language
+ is equal to the set of words
+
+69
+00:04:40,560 --> 00:04:44,910
+over the alphabet zero, one such
+that contain more symbols zero
+
+70
+00:04:45,440 --> 00:04:48,420
+than one such
+that contain
+
+71
+00:04:49,210 --> 00:04:52,860
+at least as many zero
+symbols as symbols one.
+
+72
+00:04:55,850 --> 00:04:58,310
+To define the inverse
+homomorphism of a language
+
+73
+00:04:59,100 --> 00:05:02,120
+given any homomorphism
+sigma on delta star
+
+74
+00:05:02,640 --> 00:05:09,160
+and an L language over the alphabet delta,
+we will consider all the words over sigma
+
+75
+00:05:09,550 --> 00:05:13,230
+whose image according to the
+homomorphism belongs to language.
+
+76
+00:05:14,990 --> 00:05:18,950
+The set of all these words
+is what constitutes the
+
+77
+00:05:18,950 --> 00:05:21,440
+known as inverse
+homomorphism of language.
+
+78
+00:05:23,050 --> 00:05:25,930
+As a first example to
+illustrate the behavior of
+
+79
+00:05:25,930 --> 00:05:28,290
+the inverse homomorphism
+ of a language
+
+80
+00:05:28,780 --> 00:05:30,990
+we consider the finite
+ language shown
+
+81
+00:05:31,730 --> 00:05:37,330
+and the homomorphism of the alphabet
+a, b, c on the set zero, one star
+
+82
+00:05:37,760 --> 00:05:42,600
+such that it associates the
+symbol a with the word 0,
+
+83
+00:05:43,480 --> 00:05:46,010
+the symbol b to
+the word 11,
+
+84
+00:05:46,710 --> 00:05:49,970
+and the symbol c
+to the word 110,
+
+85
+00:05:51,890 --> 00:05:57,630
+the inverse homomorphism of the language
+L is equal to the finite language shown
+
+86
+00:05:57,970 --> 00:06:02,840
+because the homomorphism of any other
+ word over the alphabet a, b, c
+
+87
+00:06:03,340 --> 00:06:04,960
+does not belong to
+the language L.
+
+88
+00:06:06,860 --> 00:06:10,660
+As a second example we consider
+ the language of words
+
+89
+00:06:10,660 --> 00:06:13,530
+over the alphabet 0, 1
+ending with a symbol 1
+
+90
+00:06:14,020 --> 00:06:21,180
+and the homomorphism of the alphabet a,
+ b, c, on words of the alphabet 0, 1
+
+91
+00:06:21,360 --> 00:06:26,650
+such that it maps the symbol a
+the word 0, and the symbol b to
+
+92
+00:06:27,040 --> 00:06:32,530
+the word 01. The inverse homomorphism
+ of language L is equal to
+
+93
+00:06:32,530 --> 00:06:35,920
+set of words over alphabet
+ ab that end with b.
+
+94
+00:06:38,910 --> 00:06:41,610
+Finally, we consider the definition
+ of operations on languages
+
+95
+00:06:41,910 --> 00:06:45,170
+as the extension of other operations
+ defined operations on words
+
+96
+00:06:46,920 --> 00:06:50,250
+when the image of a
+word is another word,
+
+97
+00:06:50,830 --> 00:06:53,930
+in order to define the extension to
+languages it is enough to consider the
+
+98
+00:06:53,930 --> 00:06:57,190
+set of all images of
+words in the language.
+
+99
+00:06:58,300 --> 00:07:02,600
+As an example, considering the
+operation reverse of a word
+
+100
+00:07:03,370 --> 00:07:05,020
+this operation
+can be extended
+
+101
+00:07:05,630 --> 00:07:10,560
+to define the reverse of a
+language as the set of reverses
+
+102
+00:07:10,670 --> 00:07:12,480
+of all words in
+the language.
+
+103
+00:07:15,030 --> 00:07:18,660
+When the result of the operation
+ on words is a language
+
+104
+00:07:19,370 --> 00:07:22,970
+the extension is made up
+considering the union of all
+
+105
+00:07:22,970 --> 00:07:26,490
+languages obtained as an image
+ of a word in the language.
+
+106
+00:07:28,040 --> 00:07:31,820
+An example is the consideration
+ of the operation prefixes
+
+107
+00:07:31,820 --> 00:07:32,540
+of a word,
+
+108
+00:07:34,580 --> 00:07:37,590
+the extension is made up
+considering the union
+
+109
+00:07:38,040 --> 00:07:41,180
+of the prefixes of all
+words in the language.
+

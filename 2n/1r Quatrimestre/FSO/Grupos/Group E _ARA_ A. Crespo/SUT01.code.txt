@@ -1,0 +1,448 @@
+Slide 9
+/*  source.c */
+#include   <stdio.h>
+main()
+{ 
+ printf ("Hello world!\n”);
+}
+
+
+slide 19
+printf("Hello world \n"); 
+printf("Number 28 is %d\n", 28); 
+printf("Print %c %d %f\n", 'a', 28, 3.0e+8);
+
+scanf("%f", &number); 
+scanf("%c\n", &character); 
+scanf("%f %d %c", &real, &integer, &character); 
+scanf("%ld", &long_integer); 
+scanf("%s", string);
+
+slide 20:
+#include <stdio.h> 
+main()
+{
+    int number; 
+    int square; 
+    printf("Please, write a number: "); 
+    scanf("%d", &number); 
+    square = number * number; 
+    printf("The square of %d is %d\n", number, square);
+}
+
+slide 25:
+int i;
+for (i=0; i< 10; i++) {
+    total = total + a[i];
+}
+
+int number; 
+for (number=0; number <100; number++) {
+    printf("%d\n", number);
+}
+
+
+Slide 26
+#include <stdio.h> 
+
+main()
+{
+    int N, add, j; 
+    do
+    {
+         /* Read N */ 
+         printf("Introduce N: "); 
+         scanf("%d", &N); 
+         add = 0;
+         for (j = 0; j <= N; j++)/*nested loop*/
+           add = add + j;
+         printf("1 + 2 + ... + N = %d\n", add); 
+    } while (N > 0);/* loop end */
+}
+
+
+#include <stdio.h> 
+
+main()
+{
+  int N; 
+  int add = 0; /* Read N */ 
+  printf("N: "); 
+  scanf("%d", &N); 
+  while (N > 0) {
+    add = add + N; 
+    N = N - 1; /* same as N-- */
+  } 
+  printf("1 + 2 +...+ N = d\n", add);
+}
+
+
+slide 28:
+// arrays declaration and access
+int v[10];
+int v2[10];
+add = 0;
+int i;
+v[1] = 5;
+for (i=0; i< 10; i++) 
+{ 
+   add = add + v[i];
+}
+
+// vector copy
+int m[10][5];
+int i,j;
+for (i=0; i < 10; i++)
+{
+    for (j=0; j < 5; j++) { 
+      add = add + m[i][j];
+    }
+}
+memcpy(v2,v, sizeof(v));
+
+slide 29:
+int b; 
+int x = 12;     
+int *p;
+int N[3] = { 1, 2, 3 };
+char *pc; // Pointer to character
+p = &x; // p is 504 (points to x)
+b = *p; // b = 12
+*p = 10; // Modifies x value
+p = N; // p points to N[0] so p=512
+
+
+slide 30:
+#include <stdio.h>  
+
+main()
+{     int x; /* integer variable */ 
+    int y;  /* integer variable */ 
+    int *px; /* pointer to integer */
+    x = 5; 
+    px = &x; /* px = address of x */ 
+    y = *px; /* y = x */
+ 
+    printf("x = %d\n", x); 
+    printf("y = %d\n", y); 
+    printf("*px = %d\n", *px);
+    printf("px (&x) = %p\n", px);
+}
+
+slide 31:
+#include <stdio.h> 
+#define STRING_SIZE 80 
+main() { 
+    char string[STRING_SIZE]; 
+    printf(" Enter a string: "); 
+    scanf("%s", string); // & is not needed
+    printf(" The string is %s\n", string); 
+}
+
+slide 32:
+#include <stdio.h>
+main(){
+  int Data[5] = {1,2,3,4,5}; 
+  int  *p;
+  int i;
+  int b;
+  p = Data+2;// p points to the 3rd      
+             // element at address 508
+  p = Data; // p points to Data (500)
+  for (i = 0; i < 5; i++) {
+       printf("Data[%u]=%u \n”, i, Data[i]);
+       printf("Data[%u]=%u \n”, i, *p++);
+  }
+}
+
+Slide 34:
+// structure definition
+struct CD
+{ 
+    char title 100]; 
+    char artist[50]; 
+    int num_songs; 
+    int year; 
+    float price; 
+};
+// Variable declaration
+struct CD cd1;
+// Accessing the structure
+strcpy(cd1.title, "La Boheme"); 
+strcpy(cd1.artist, "Puccini"); 
+cd1.num_songs = 2; 
+c1.year = 2006;
+
+struct CD *pcd;
+pcd = &cd1;
+pcd->price = 16.5;
+
+
+slide 36:
+#include <stdio.h> 
+#include <string.h>
+#define NUMBOXES 3
+
+typedef struct {
+    char part[20];// part type 
+    int quantity;   // part number 
+    float unit_price; // part price 
+    char available; // there are part units
+} parts_record;
+
+/* Print the information */
+for (record = 0; record < NUMBOXES; record++) {
+    if (boxes[record].available == 'V') {
+        printf ("Box %d contains:\n", record + 1); 
+        printf ("Part => %s\n", boxes[record].part); 
+        printf ("Quantity => %d\n", boxes[record].quantity);
+            printf ("Price => %f euros\n", boxes[record].unit_price);
+        } 
+    } /* end for */
+} /* end main */
+
+main() {
+    parts_record boxes[NUMBOXES]; 
+    int record=0; 
+    int i;
+    /* Read data from the keyboard */
+    do {    
+        /* Read the part name */ 
+        printf("Part name => "); 
+        scanf("%s", boxes[record].part);
+        /* Read the number of parts */ 
+        printf(" Number of parts => "); 
+        scanf("%d", &boxes[record].quantity);
+        /* Read the price of each part */ 
+        printf(" Price of each part => "); 
+        scanf("%f", &boxes[record].unit_price);
+        /* Indicate the record has data (V) */
+        boxes[record].available = 'V';
+        record ++; 
+    } while (record < NUMBOXES);
+}
+
+slide 38:
+void permute(double *x, double *y) 
+{  double temp; 
+    temp = *x; 
+    *x = *y; 
+    *y = temp;
+}
+
+slide 39:
+#include <stdio.h> 
+// declaration
+double abs_value(double x); 
+
+void main (void) {
+    double z, y;
+    y = -30.8; 
+    z = abs_value(y) + y*y;
+}
+
+// definition
+double abs_value(double x) 
+{
+    if (x < 0.0) 
+           return -x;
+    else
+           return x;
+}
+
+slide 40:
+#include <stdio.h>
+
+// Function definition
+void permute(double *x, double *y){
+    double temp; 
+    temp = *x; 
+    *x = *y; 
+    *y = temp;
+}
+
+void main(void) {
+    double a=1.0, b=2.0; 
+    printf("a = %f, b = %f\n");
+    permute(&a, &b);
+    printf("a = %f, b = %f\n");
+}
+
+slide 41:
+#include <stdio.h> 
+
+void funcion1(void);
+
+int a = 10; // global variable
+
+main()
+{
+    int b = 2; // local variable
+    a++;
+    funcion1();
+    a++;
+    printf("a= %d, b= %d\n", a, b);
+    a++;
+    funcion1();
+} 
+
+void funcion1(void)
+{
+    static int c = 4; // static var 
+    printf("a= %d, c= %d\n", a, c); 
+    c++;
+    return;
+}
+
+slide 42:
+#include <stdio.h> 
+#include <math.h>
+
+void hypotenuse(float a, float b, float *h) 
+{
+    *h = sqrt(pow(a,2) + pow(b, 2));
+}
+void read_catheti (float *a, float *b) {
+    printf("Please enter catheti values a and b :\n"); 
+    scanf("%f %f", a, b);
+}
+
+main() { 
+    float a, b, h; 
+    read_catheti (&a,&b); 
+    hypotenuse(a,b,&h); 
+    printf("The hypotenuse value is %f\n", h); 
+}
+
+slide 43:
+#include <stdio.h> 
+
+int main (int argc, char *argv[])
+{
+    int sum1,sum2;
+    if (argc == 3) {
+        sum1 = atoi(argv[1]);
+        sum2 = atoi(argv[2]);
+        printf("Add = %d\n", sum1+sum2);
+    }
+    else {
+        printf("Command use: %s arg1 arg2\n", argv[0]);
+    }     
+}
+
+
+
+
+additional code:
+=========================
+
+// sizes.c
+#include   <stdio.h>
+
+void main()
+{ 
+  int k;
+  long l;
+  float x;
+  double d;
+
+  printf ("Sizes: int: %d, long: %d, float: %d, double: %d\n",
+   sizeof(k), sizeof(l), sizeof(float), sizeof(double));
+
+}
+
+//unsafe_if.c
+/*  source.c */
+
+#include   <stdio.h>
+
+void main()
+{ 
+ int k = 0;
+
+ if (k = 1) printf ("K is 1\n");
+ else printf ("K is not 1\n");
+ printf("K = %d\n", k);
+
+}
+
+//unsafeVector.c
+/*  source.c */
+
+#include   <stdio.h>
+
+#define MAX 100
+
+void main()
+{
+  int v1[MAX];
+  int i,j;
+  int v2[MAX];
+  int v3[MAX];
+
+  // iniciar v1 y v2
+  for (i = 0; i < MAX; i++) {
+    v1[i] = 1;
+    v2[i] = 2;
+    v3[i] = 3;
+  }
+
+  for (j = 120; j < 130; j++) {
+     v1[j] = 10;
+     v2[j] = 20;
+     v3[j] = 30;
+   }
+    // volcar valores si distinto de 1 o 2
+  printf("Values\n");
+  for (i = 0; i < MAX; i++) {
+    if (v1[i] != 1) printf("v1[%d] = %d;\n", i, v1[i]);
+    if (v2[i] != 2) printf("v2[%d] = %d;\n", i, v2[i]);
+    if (v3[i] != 3) printf("v3[%d] = %d;\n", i, v3[i]);
+  }
+
+}
+
+
+
+// safeVector.c
+
+#include   <stdio.h>
+#include  <stdlib.h>
+
+#define MAX 1000
+
+void assignValue(int val, int pos, int v[]) {
+
+  if (pos >= MAX) {printf("Constraint Error\n"); exit(1);}
+  v[pos] = val;
+}
+
+void main()
+{
+  int v1[MAX];
+  int i,j;
+  int v2[MAX];
+  int v3[MAX];
+
+  // iniciar v1 y v2
+  for (i = 0; i < MAX; i++) {
+    v1[i] = 1;
+    v2[i] = 2;
+    v3[i] = 3;
+  }
+
+  for (j = 990; j < 1020; j++) {
+     assignValue(10, j, v1);
+     assignValue(20, j, v2);
+     assignValue(30, j, v3);
+   }
+    // volcar valores si distinto de 1 o 2
+  printf("Values\n");
+  for (i = 0; i < MAX; i++) {
+    if (v1[i] != 1) printf("v1[%d] = %d;\n", i, v1[i]);
+    if (v2[i] != 2) printf("v2[%d] = %d;\n", i, v2[i]);
+    if (v3[i] != 3) printf("v3[%d] = %d;\n", i, v3[i]);
+  }
+
+}
+

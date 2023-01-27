@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 oct. 2020, 15:11:30
+    Author     : jsoler
+*/
+.list-view{
+    -fx-background-color: lavender;
+}
+.button {
+    -fx-background-color: skyblue, derive(skyblue, 25%), derive(skyblue, 50%), derive(red , 75%);
+    -fx-background-insets: 1, 2, 3, 4;
+    -fx-border-color: black; /* set border to red*/
+    -fx-border-width: 1, 2 0 2 0; /* border width 3px */
+}

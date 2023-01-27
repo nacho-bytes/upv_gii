@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=BuscadorDeLaBibl
+comment0.text=\r\n\ BuscadorDeLaBibl\:\ clase\ que\ representa\ un\ Buscador\ eficiente,\ i.e.\ con\r\n\ un\ Indice,\ de\ una\ Biblioteca\ Digital\ (BD).\ Por\ ello,\ su\ funcionalidad\ \r\n\ basica\ es...\r\n\ 1.-\ INDEXAR\:\ crear\ el\ Indice\ de\ la\ biblioteca,\ representado\ mediante\ \ \r\n\ \ \ \ \ un\ Map\ implementado\ mediante\ una\ Tabla\ Hash\ Enlazada.\r\n\ 2.-\ BUSCAR\:\ recuperar\ del\ Indice\ de\ la\ biblioteca\ la\ informacion\ que\ \r\n\ \ \ \ \ exista\ sobre\ una\ palabra\ dada\ (Posting\ List)\ en\ ella.\r\n\ \r\n\ @author\ (EDA-QA)\ \r\n\ @version\ (Curso\ 2020-2021)\r\n
+comment1.params=
+comment1.target=BuscadorDeLaBibl()
+comment1.text=\ Crea\ el\ Buscador\ de\ la\ BD\ que\ forman\ los\ libros\ de\ listaLibros.\r\n\ \ Basicamente,\ ello\ supone\ crear\ el\ Indice\ de\ la\ biblioteca\ \r\n\ \ con,\ como\ maximo,\ maxTerminos.\ Si\ no\ encuentra\ (el\ fichero\ .txt\ \ \r\n\ \ de)\ un\ libroLanza\ FileNotFoundException\ para\ advertirlo.\r\n
+comment2.params=fichLibro
+comment2.target=boolean\ indexarLibro(java.lang.String)
+comment2.text=\ Devuelve\ true\ tras\ actualizar\ el\ Buscador\ de\ una\ BD\ con\ los\ terminos\r\n\ \ que\ contiene\ fichLibro\ (fichero\ .txt).\ Basicamente,\ ello\ supone\ actualizar\ \r\n\ \ el\ Indice\ de\ la\ biblioteca\ con\ los\ terminos\ de\ fichlibro.\r\n\ \ El\ metodo\ devuelve\ false\ si\ fichlibro\ no\ existe.\r\n
+comment3.params=unaPalabra
+comment3.target=java.lang.String\ buscar(java.lang.String)
+comment3.text=\r\n\ Devuelve\ en\ formato\ texto\ (String)\ el\ resultado\ de\ la\ busqueda\ del\ termino\r\n\ asociado\ a\ unaPalabra\ en\ el\ Indice\ de\ una\ BD\ (frecuencia\ de\ aparicion\ del\ \r\n\ termino\ y,\ en\ su\ caso,\ el\ listado\ que\ contiene\ los\ titulos\ y\ lineas\ de\ los\r\n\ libros\ de\ la\ bibiblioteca\ en\ los\ que\ aparece,\ i.e.\ su\ Posting\ List).\r\n
+comment4.params=unaPalabra
+comment4.target=boolean\ esTermino(java.lang.String)
+comment4.text=\ Comprueba\ si\ unaPalabra\ es\ un\ termino\ del\ Indice\ de\ una\ BD,\ i.e.\ \r\n\ \ si\ unaPalabra\ esta\ formada\ por\ letras\ del\ alfabeto\ castellano\ en\ \r\n\ \ minusculas.\r\n
+comment5.params=
+comment5.target=librerias.estructurasDeDatos.modelos.ListaConPI\ hapax()
+comment5.text=\ Devuelve\ una\ ListaConPI\ con\ aquellos\ terminos\ del\ Indice\ de\ una\ BD\ que\ \r\n\ \ solo\ aparecen\ solo\ una\ vez\ en\ sus\ libros,\ i.e.\ los\ llamados\ "hapax\ \r\n\ \ legomena"\ de\ la\ BD,\ o\ null\ si\ no\ existe\ ninguno.\r\n
+numComments=6

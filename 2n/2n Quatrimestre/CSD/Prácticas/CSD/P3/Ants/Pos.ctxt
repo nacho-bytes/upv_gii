@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Pos
+comment0.text=\r\n\ 2d\ position\r\n\ \r\n\ @author\ CSD\ Juansa\ Sendra\r\n\ @version\ 2021\r\n
+comment1.params=x0\ y0
+comment1.target=Pos(int,\ int)
+comment2.params=p\ d
+comment2.target=Pos(Pos,\ Dir)
+comment3.params=p
+comment3.target=boolean\ eq(Pos)
+comment4.params=T
+comment4.target=boolean\ legal(int)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

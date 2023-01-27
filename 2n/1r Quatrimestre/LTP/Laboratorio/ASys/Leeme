@@ -1,0 +1,32 @@
+INSTRUCCIONES PARA USAR ASYS
+-------------------------------------------
+
+1) Descomprime "ASys for Students.zip".
+
+2) Descomprime algún ejercicio de la carpeta "Ejercicios":
+         Boletin.zip    ->   Ejercicios similares a los del boletín de la práctica 1
+         Figuras.zip   ->   Ejercicio similar al de la práctica 1
+         Pilas.zip       ->   Ejercicio similar al de la práctica 2
+         Colas.zip      ->   Ejercicio similar al de la práctica 2
+         Desplazamiento.zip   ->   Examen de año anterior
+         Poliedros.zip       ->   Examen de año anterior
+         Vehiculos.zip      ->   Examen de año anterior
+
+3) Ejecuta ASys for Students (Doble clic en "Asys.jar").
+
+4) Carga un ejercicio (haz clic en "Open exercise" -> "Load Exercise").
+
+5) Lee las instrucciones del ejercicio (haz clic en "Open instructions").
+
+6) Mira los recursos que te da el ejercicio para poder resolverlo (haz clic en "Open resources"). 
+Descomprime los recursos en una carpeta *FUERA* del examen de ASys. 
+
+7) Abre los recursos en algún entorno de desarrollo como BlueJ y resuelve el ejercicio propuesto.
+
+8) Copia tu solución en la carpeta  "Nombre del Ejercicio/Projects/Unmarked/".
+ATENCIÓN: Tu solución es una carpeta (con cualquier nombre) que contiene los ficheros ".java" que solucionan el ejercicio propuesto. 
+No incluir en estos ficheros ".java" los ficheros junit.
+
+9) Auto-corrige el ejercicio usando ASys (haz clic en "Mark exercises").
+
+10) Puedes encontrar un pequeño manual haciendo clic en "ASys -> Help".

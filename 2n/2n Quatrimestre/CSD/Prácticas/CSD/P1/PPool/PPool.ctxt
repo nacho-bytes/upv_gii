@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=PPool
+comment1.params=v\ i\ def\ a\ b
+comment1.target=int\ integer(java.lang.String[],\ int,\ int,\ int,\ int)
+comment10.params=args
+comment10.target=void\ main(java.lang.String[])
+comment11.params=
+comment11.target=void\ run()
+comment2.params=s
+comment2.target=void\ simulate(java.lang.String)
+comment3.params=
+comment3.target=void\ run()
+comment4.params=f
+comment4.target=void\ enableTypeRadioButtons(boolean)
+comment5.params=k\ i
+comment5.target=PPool(int,\ int)
+comment6.params=e
+comment6.target=void\ valueChanged(javax.swing.event.ListSelectionEvent)
+comment7.params=e
+comment7.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment8.params=
+comment8.target=void\ run()
+comment9.params=
+comment9.target=java.awt.Dimension\ getPreferredSize()
+numComments=12

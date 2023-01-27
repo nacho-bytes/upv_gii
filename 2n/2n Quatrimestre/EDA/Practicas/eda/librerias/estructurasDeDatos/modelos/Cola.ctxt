@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Cola
+comment0.text=\r\n\ Modelo\ Cola\:\ acceso\ FIFO\ a\ los\ elementos\ de\ una\ coleccion\r\n\ @param\ <E>\ tipo\ de\ datos\ de\ la\ estructura\r\n\ \r\n\ @author\ (EDA)\ \r\n\ @version\ (Curso\ 2018-2019)\r\n
+comment1.params=e
+comment1.target=void\ encolar(java.lang.Object)
+comment1.text=Inserta\ el\ Elemento\ e\ en\ una\ Cola,\ o\ lo\ situa\ en\ su\ final
+comment2.params=
+comment2.target=java.lang.Object\ desencolar()
+comment2.text=\ SII\ \!esVacia()\:\ \r\nobtiene\ y\ elimina\ de\ una\ Cola\ el\ Elemento\ que\ ocupa\ su\ principio
+comment3.params=
+comment3.target=java.lang.Object\ primero()
+comment3.text=\ SII\ \!esVacia()\:\ obtiene\ el\ Elemento\ que\ ocupa\ el\ principio\ \r\nde\ una\ Cola,\ el\ primero\ en\ orden\ de\ insercion
+comment4.params=
+comment4.target=boolean\ esVacia()
+comment4.text=Comprueba\ si\ una\ Cola\ esta\ vacia
+numComments=5

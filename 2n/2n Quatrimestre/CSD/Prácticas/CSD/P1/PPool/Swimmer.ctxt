@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Swimmer
+comment1.params=
+comment1.target=void\ delay()
+comment2.params=id0\ p
+comment2.target=Swimmer(int,\ Pool)
+comment3.params=
+comment3.target=void\ run()
+comment4.params=
+comment4.target=void\ swims()
+comment5.params=
+comment5.target=void\ rests()
+numComments=6

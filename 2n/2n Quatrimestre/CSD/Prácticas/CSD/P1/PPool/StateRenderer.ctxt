@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=StateRenderer
+comment1.params=
+comment1.target=StateRenderer()
+comment2.params=type
+comment2.target=void\ inic(int)
+comment3.params=list\ value\ index\ isSelected\ cellHasFocus
+comment3.target=java.awt.Component\ getListCellRendererComponent(javax.swing.JList,\ java.lang.Object,\ int,\ boolean,\ boolean)
+numComments=4

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Dir
+comment0.text=\r\n\ Direction\ of\ movement\r\n\ \r\n\ @author\ CSD\ Juansa\ Sendra\r\n\ @version\ 2021\r\n
+comment1.params=ix\ iy
+comment1.target=Dir(int,\ int)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

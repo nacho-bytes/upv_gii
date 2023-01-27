@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Ants
+comment0.text=\r\n\ Application\ entry\ point\r\n\ \r\n\ @author\ CSD\ Juansa\ Sendra\r\n\ @version\ 2021\r\n
+comment1.params=args\ i\ def\ min\ max
+comment1.target=int\ readArg(java.lang.String[],\ int,\ int,\ int,\ int)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment2.text=\ ARGUMENTS\r\n\ type\ of\ Terrain\ (0..3,\ default\ 0)\r\n\ \ \ Terrain0\:\ native\ monitor\r\n\ \ \ Terrain1\:\ general\ monitor,\ 1\ general\ condition\r\n\ \ \ Terrain2\:\ general\ monitor,\ one\ condition\ per\ cell\r\n\ \ \ Terrain3\:\ general\ monitor,\ one\ condition\ per\ cell,\ no\ deadlock\r\n\ Size\ of\ terrain\ (side\ 6..10,\ default\ 8)\r\n\ Number\ of\ ants\ \ (10..26,\ default\ 15)\r\n\ Number\ of\ moves\ per\ ant\ (2..5,\ default\ 3)\r\n
+numComments=3

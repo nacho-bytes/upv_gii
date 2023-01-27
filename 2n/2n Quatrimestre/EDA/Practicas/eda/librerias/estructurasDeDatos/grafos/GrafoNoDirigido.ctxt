@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=GrafoNoDirigido
+comment0.text=\ Clase\ GrafoNoDirigido\:\ implementacion\ de\ un\ grafo\ No\ Dirigido\ \r\n\ \ (Ponderado\ o\ no)\ mediante\ Listas\ de\ Adyacencia\:<br>\r\n\ \ un\ grafo\ No\ Dirigido\ ES\ UN\ Grafo\ Dirigido\ tal\ que\ si\ la\ Arista\ (i,\ j)\ \ \r\n\ \ esta\ presente\ en\ la\ Lista\ de\ Adyacencia\ de\ i\ entonces\ tambien\ lo\ esta\r\n\ \ la\ Arista\ (j,\ i)\ en\ la\ de\ j\r\n\ \r\n\ @version\ Diciembre\ 2019\r\n
+comment1.params=numV
+comment1.target=GrafoNoDirigido(int)
+comment1.text=\ Crea\ un\ grafo\ No\ Dirigido\ vacio\ con\ numV\ vertices.\ \r\n\ \r\n\ @param\ numV\ \ Numero\ de\ vertices\r\n
+comment2.params=i\ j
+comment2.target=void\ insertarArista(int,\ int)
+comment2.text=\ Si\ no\ esta,\ inserta\ la\ arista\ (i,\ j)\ en\ un\ grafo\ No\ Dirigido\ \ \r\n\ y\ No\ Ponderado;\ por\ tanto,\ tambien\ inserta\ la\ arista\ (j,\ i).\r\n\ \r\n\ \ @param\ i\ \ \ \ Vertice\ origen\r\n\ \ @param\ j\ \ \ \ Vertice\ destino\r\n
+comment3.params=i\ j\ p
+comment3.target=void\ insertarArista(int,\ int,\ double)
+comment3.text=\ Si\ no\ esta,\ inserta\ la\ arista\ (i,\ j)\ de\ peso\ p\ en\ un\ grafo\ \ \r\n\ No\ Dirigido\ y\ Ponderado;\ por\ tanto,\ tambien\ inserta\ la\ arista\ \r\n\ \ (j,\ i)\ de\ peso\ p.\r\n\ \ \r\n\ @param\ i\ \ \ \ Vertice\ origen\r\n\ @param\ j\ \ \ \ Vertice\ destino\r\n\ @param\ p\ \ \ \ Peso\ de\ (i,\ j)\r\n
+numComments=4

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=GeneradorDeString
+comment0.text=\r\n\ GeneradorDeString(n)\ permite\ generar\ String\ que\ tienen\r\n\ iguales\ los\ n\ caracteres\ iniciales.\r\n\ Ejemplo\ de\ uso\ para\ crear\ dos\ cadenas\ s1\ y\ s2\ que\ comparten\ los\ \r\n\ primeros\ 10\ caracteres\:\r\n\ GeneradorDeString\ g\ \=\ new\ GeneradorDeString(10);\r\n\ \ String\ s1\ \=\ g.generar();\r\n\ \ String\ s2\ \=\ g.generar();\r\n\r\n\ @author\ (EDA)\ \r\n\ @version\ (Curso\ 2017-2018)\r\n
+comment1.params=n
+comment1.target=GeneradorDeString(int)
+comment1.text=\r\n\ Crea\ un\ GeneradorDeString\ cuyos\ n\ primeros\ caracteres\ \r\n\ son\ iguales.\r\n
+comment2.params=
+comment2.target=java.lang.String\ generar()
+comment2.text=\r\n\ Devuelve\ un\ String\ con\ sus\ n\ primeros\ caracteres\r\n\ identicos,\ aunque\ elegidos\ al\ azar.\r\n
+numComments=3

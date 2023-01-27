@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Trabajo
+comment0.text=\ Clase\ Trabajo\:\ representa\ un\ trabajo\ a\ imprimir.\r\n\ \ ATRIBUTOS\:\ \r\n\ \ \ \ \ \ TIENE\ UN\ titulo\ (String)\r\n\ \ \ \ \ \ TIENE\ UN\ numero\ de\ paginas\ (int)\r\n\ \ \ \ \ \ TIENE\ UN\ instante\ de\ tiempo\ (en\ segundos)\ \r\n\ \ \ \ \ \ en\ el\ que\ "entra"\ (es\ enviado)\ al\ servidor\ \r\n\ \ \ \ \ \ de\ impresi\u00F3n\ (int)\r\n\ \ \ \ \ \ \r\n\ \ @author\ (EDA-QB)\r\n\ \ @version\ (Curso\ 2020-2021)\r\n
+comment1.params=t\ n\ e
+comment1.target=Trabajo(java.lang.String,\ int,\ int)
+comment1.text=\ Crea\ un\ Trabajo\ de\ titulo\ t,\ numero\ de\ paginas\ n\r\n\ \ e\ instante\ en\ el\ que\ "entra"\ al\ servidor\ e.\r\n\ \ @param\ t\ \ \ \ String\r\n\ \ @param\ n\ \ \ \ int\r\n\ \ @param\ e\ \ \ \ int\ (seg.)\r\n
+comment2.params=
+comment2.target=java.lang.String\ getTitulo()
+comment2.text=\ Devuelve\ el\ titulo\ de\ un\ Trabajo.\r\n\ \ @return\ String\r\n
+comment3.params=
+comment3.target=int\ getNumPaginas()
+comment3.text=\ Devuelve\ el\ numero\ de\ paginas\ de\ un\ Trabajo.\r\n\ \ @return\ int\r\n
+comment4.params=
+comment4.target=int\ getEntraAlServidor()
+comment4.text=\ Devuelve\ el\ instante\ de\ tiempo\ (en\ seg.)\ en\ el\ que\ un\r\n\ \ un\ Trabajo\ "entra"\ al\ servidor\ de\ impresi\u00F3n.\r\n\ \ @return\ int\ (seg.)\r\n
+comment5.params=otro
+comment5.target=int\ compareTo(Trabajo)
+comment5.text=\ Devuelve\ el\ valor\ int\ que\ resulta\ de\ comparar\ el\ numero\ de\r\n\ \ paginas\ de\ un\ Trabajo\ (this)\ con\ las\ de\ otro.\ Dicho\ valor\r\n\ \ sera...\r\n\ \ **\ NEGATIVO\ si\ un\ Trabajo\ (this)\ tiene\ MENOS\ paginas\ que\ el\ otro,\r\n\ \ \ \ \ i.e.\ si\ su\ impresion\ es\ MAS\ prioritaria\ que\ la\ del\ otro\r\n\ \ **\ POSITIVO\ si\ un\ Trabajo\ (this)\ tiene\ MAS\ paginas\ que\ otro,\ \r\n\ \ \ \ \ i.e.\ si\ su\ impresion\ es\ MENOS\ prioritaria\ que\ la\ del\ otro\r\n\ \ **\ CERO\ si\ ambos\ Trabajos\ tienen\ el\ mismo\ numero\ de\ paginas\r\n\ \ @param\ otro\ \ Trabajo\ \ \r\n\ \ @return\ int\ resultado\ de\ la\ comparacion\ de\ un\ Trabajo\ (this)\ con\ otro\ \r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\ Devuelve\ el\ String\ que\ representa\ un\ Trabajo\ en\ un\ cierto\ \r\n\ \ formato\ texto.\r\n\ \ @return\ String\r\n
+numComments=7

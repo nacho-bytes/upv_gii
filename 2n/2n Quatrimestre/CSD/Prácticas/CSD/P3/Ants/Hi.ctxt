@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Hi
+comment0.text=\r\n\ New\ ant\ arrives\ to\ Terrain\r\n\ \r\n\ @author\ CSD\ Juansa\ Sendra\r\n\ @version\ 2021\r\n
+comment1.params=a\ p
+comment1.target=Hi(int,\ Pos)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

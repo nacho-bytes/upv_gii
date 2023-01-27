@@ -1,0 +1,605 @@
+1
+00:00:03,290 --> 00:00:06,760
+In this video we present the
+deterministic model of finite automaton
+
+2
+00:00:08,420 --> 00:00:12,270
+finite automata are devices that allow
+ us to describe formal languages
+
+3
+00:00:12,930 --> 00:00:16,990
+where the description of the language is
+given by a mechanism that allows to decide
+
+4
+00:00:17,220 --> 00:00:19,600
+whether a word belongs
+to the language or not
+
+5
+00:00:20,950 --> 00:00:24,070
+in the processing of each word,
+ its symbols are considered
+
+6
+00:00:24,070 --> 00:00:26,370
+in an ordered way and
+from left to right
+
+7
+00:00:27,610 --> 00:00:31,200
+the analysis of each symbol implies a
+change in the automaton configuration
+
+8
+00:00:32,340 --> 00:00:34,980
+the description of formal
+languages by finite automata
+
+9
+00:00:35,030 --> 00:00:37,960
+assumes that there is a finite number
+ of the different configurations
+
+10
+00:00:37,960 --> 00:00:39,350
+that the finite automaton
+ can consider.
+
+11
+00:00:41,640 --> 00:00:44,220
+As an example let's consider
+the language of words over
+
+12
+00:00:44,220 --> 00:00:47,330
+alphabet a, b, that contain
+an odd number of symbols a,
+
+13
+00:00:48,370 --> 00:00:51,130
+to decide whether or not a
+word belongs this language
+
+14
+00:00:51,470 --> 00:00:55,220
+it is enough to consider the number of
+symbols a that have been analyzed so far,
+
+15
+00:00:55,900 --> 00:00:58,430
+so it is enough to take
+into account whether an 
+
+16
+00:00:58,430 --> 00:01:00,560
+even number or an odd number of
+symbols a has been processed,
+
+17
+00:01:01,890 --> 00:01:03,880
+any other consideration
+ is superfluous.
+
+18
+00:01:05,320 --> 00:01:08,100
+The different configurations that
+a finite automaton can consider
+
+19
+00:01:08,240 --> 00:01:10,170
+determines the number of
+states of the automaton
+
+20
+00:01:10,980 --> 00:01:14,280
+while the configuration changes
+ caused by the consideration
+
+21
+00:01:14,550 --> 00:01:17,490
+of the symbols determine
+ the transitions
+
+22
+00:01:19,600 --> 00:01:23,570
+one of the ways to represent finite automata
+ is the so-called transition diagram.
+
+23
+00:01:24,110 --> 00:01:27,000
+where each state of the automaton
+ is symbolized with a circle
+
+24
+00:01:27,610 --> 00:01:31,830
+that we identify in order to, later, be
+ able to refer to them individually.
+
+25
+00:01:30,710 --> 00:01:31,830
+they individually
+
+26
+00:01:33,000 --> 00:01:35,730
+each of the transitions are
+ represented by an arrow
+
+27
+00:01:35,850 --> 00:01:37,480
+labelled with symbols
+ in the alphabet
+
+28
+00:01:38,590 --> 00:01:42,730
+it is necessary to indicate the state
+where the analysis of any word begins
+
+29
+00:01:43,470 --> 00:01:47,570
+that state will be marked using an
+arrow, in this case the state p
+
+30
+00:01:49,400 --> 00:01:52,720
+and it also remains to indicate
+the final or accepting states,
+
+31
+00:01:53,250 --> 00:01:57,900
+where, once the analysis finishes, it is
+decided if the word belongs to the language
+
+32
+00:01:58,520 --> 00:02:00,960
+these states will be marked
+ with a double circle
+
+33
+00:02:01,400 --> 00:02:03,930
+in this case the
+states r and s.
+
+34
+00:02:05,880 --> 00:02:09,630
+It is important to note that in the
+ deterministic model, for each
+
+35
+00:02:09,630 --> 00:02:13,950
+state there are no two outgoing transitions
+ labeled with the same symbol.
+
+36
+00:02:12,520 --> 00:02:13,950
+symbol.
+
+37
+00:02:16,840 --> 00:02:19,870
+To illustrate how a word is processed
+in a finite deterministic automaton
+
+38
+00:02:20,060 --> 00:02:22,070
+consider the automaton
+and the word shown.
+
+39
+00:02:22,710 --> 00:02:25,410
+The analysis considers as a
+starting point the initial state
+
+40
+00:02:25,640 --> 00:02:28,390
+from which the first symbol
+ of the word is analyzed
+
+41
+00:02:28,470 --> 00:02:30,400
+taking into account the transition
+ that is labelled with
+
+42
+00:02:30,400 --> 00:02:34,550
+the symbol that we are analyzing,
+ in this case a, as well as
+
+43
+00:02:34,560 --> 00:02:35,560
+the state that
+is reached.
+
+44
+00:02:38,050 --> 00:02:40,690
+The first symbol has been processed
+ and state one has been reached,
+
+45
+00:02:41,050 --> 00:02:45,520
+this is the state to be taken into account in
+order to analyze the second symbol of the word.
+
+46
+00:02:44,590 --> 00:02:45,520
+symbol of the word
+
+47
+00:02:46,560 --> 00:02:49,570
+The process is the same,
+considering the transition 
+
+48
+00:02:49,570 --> 00:02:51,460
+from state one labeled
+ with symbol b
+
+49
+00:02:52,170 --> 00:02:55,080
+and the state that is reached,
+ in this case state two
+
+50
+00:02:56,080 --> 00:02:58,700
+from this point the following
+ symbol is processed.
+
+51
+00:03:00,840 --> 00:03:03,960
+The transition that needs to be considered
+ at this time of analysis is a loop
+
+52
+00:03:04,630 --> 00:03:05,970
+that means that there
+is no change of state
+
+53
+00:03:06,990 --> 00:03:09,930
+and we go on to consider the following
+ symbol, the last of the word.
+
+54
+00:03:11,040 --> 00:03:14,270
+Again using the outgoing transition
+ from the active state 
+
+55
+00:03:14,280 --> 00:03:16,690
+and which is labeled with
+the symbol to be analyzed
+
+56
+00:03:17,400 --> 00:03:21,110
+this transition leads to state one
+where the analysis of the word ends.
+
+57
+00:03:22,370 --> 00:03:25,250
+Due to a final state has been reached,
+it is concluded that the word belongs
+
+58
+00:03:25,250 --> 00:03:27,660
+to the language represented by the
+ determinist finite automaton
+
+59
+00:03:28,550 --> 00:03:31,110
+Another way of considering the
+processing of a word is as the
+
+60
+00:03:31,110 --> 00:03:33,490
+search for a path labeled with
+ the symbols of the word
+
+61
+00:03:33,690 --> 00:03:36,160
+that, from the initial state,
+ reaches a certain state.
+
+62
+00:03:37,320 --> 00:03:40,640
+we can represent the path as
+ shown, enumerating the,
+
+63
+00:03:40,640 --> 00:03:44,260
+in this case, four transitions
+ used to process the word.
+
+64
+00:03:45,380 --> 00:03:48,690
+As a second example of processing we
+ will consider the same automaton
+
+65
+00:03:48,850 --> 00:03:52,230
+and the analysis of
+ the word ababb
+
+66
+00:03:53,260 --> 00:03:56,280
+the analysis of this word is
+summarized in the path shown
+
+67
+00:03:57,350 --> 00:03:58,570
+that reaches state two,
+
+68
+00:04:00,320 --> 00:04:03,480
+this state is not final so
+ the word is rejected,
+
+69
+00:04:03,800 --> 00:04:05,110
+it's not a word
+of language.
+
+70
+00:04:09,100 --> 00:04:11,800
+The last example of processing
+ that is shown considers
+
+71
+00:04:11,890 --> 00:04:17,680
+again the same automaton and,
+in this case, the word abab
+
+72
+00:04:18,950 --> 00:04:21,640
+in this case the processing of
+the word cannot be completed
+
+73
+00:04:22,200 --> 00:04:25,610
+because after analyzing three
+ symbols there is not an
+
+74
+00:04:25,610 --> 00:04:29,740
+outgoing transition from the marked state
+ labelled with the symbol to analyze
+
+75
+00:04:31,510 --> 00:04:34,510
+despite the fact that the last
+reached state is final, because 
+
+76
+00:04:34,510 --> 00:04:37,870
+the processing of the word could not
+ be finished, this is rejected.
+
+77
+00:04:40,490 --> 00:04:43,230
+We will now see briefly how to
+address the construction of
+
+78
+00:04:43,230 --> 00:04:45,100
+deterministic finite automata
+ for a given language.
+
+79
+00:04:46,220 --> 00:04:49,450
+as the first finite automaton example,
+let's consider the previous language
+
+80
+00:04:49,650 --> 00:04:52,800
+of words over a,b, with
+an odd number of as
+
+81
+00:04:54,110 --> 00:04:57,620
+we have seen that only two
+situations are relevant,
+
+82
+00:04:57,620 --> 00:04:59,510
+thus, we will have two
+states in the automaton
+
+83
+00:05:00,940 --> 00:05:04,530
+in this case the zero state will
+represent the situation where
+
+84
+00:05:04,530 --> 00:05:06,920
+an even number of symbols
+ a has been processed,
+
+85
+00:05:08,110 --> 00:05:10,770
+and state one will represent
+ the situation where 
+
+86
+00:05:10,770 --> 00:05:12,210
+an odd number of symbols
+a has been processed.
+
+87
+00:05:14,320 --> 00:05:18,230
+if, after processing some of a word,
+ state zero has been reached
+
+88
+00:05:18,530 --> 00:05:20,610
+it is because an even number
+ of as are processed,
+
+89
+00:05:21,130 --> 00:05:25,050
+from this point on the analysis of
+a new a implies a change of state
+
+90
+00:05:25,870 --> 00:05:30,170
+however, the analysis of a b does
+ not imply a change of state
+
+91
+00:05:30,990 --> 00:05:33,110
+because it does not change
+the number of as processed.
+
+92
+00:05:34,580 --> 00:05:37,810
+Similarly, if we take into account
+ that we have processed a
+
+93
+00:05:37,810 --> 00:05:41,530
+odd number of symbols a, the
+analysis of a new a implies
+
+94
+00:05:41,530 --> 00:05:46,090
+a change of state, while the analysis
+ of a b does not modify the state
+
+95
+00:05:46,670 --> 00:05:50,110
+as it does not change the
+number of as from odd to even
+
+96
+00:05:51,240 --> 00:05:54,350
+as we said before, all finite
+automata distinguish a state
+
+97
+00:05:54,350 --> 00:05:56,580
+from which the analysis
+ of the words begins
+
+98
+00:05:57,150 --> 00:05:59,910
+in this example before processing
+ the first symbol of any
+
+99
+00:05:59,910 --> 00:06:03,390
+word, zero as have been
+processed, an even number 
+
+100
+00:06:04,110 --> 00:06:06,500
+so the state zero will
+be the initial state.
+
+101
+00:06:07,280 --> 00:06:10,880
+in this example the set of final
+states is limited to state one
+
+102
+00:06:11,280 --> 00:06:14,240
+because it is the state that determines
+ that the number of symbols a
+
+103
+00:06:14,460 --> 00:06:16,200
+analyzed is odd,
+
+104
+00:06:17,470 --> 00:06:19,750
+therefore, the automaton to be
+ built is the one shown.
+
+105
+00:06:21,660 --> 00:06:25,020
+As a second example, let's consider
+ the language of words over a, b
+
+106
+00:06:25,150 --> 00:06:27,870
+with at least one b and a
+number of as greater than one
+
+107
+00:06:28,790 --> 00:06:32,700
+to keep track of the number of as
+analyzed we will need three states
+
+108
+00:06:33,010 --> 00:06:36,810
+and we'll need two to control
+whether a b has appeared or not
+
+109
+00:06:37,410 --> 00:06:42,040
+so to control both conditions
+simultaneously we will need six states
+
+110
+00:06:43,500 --> 00:06:47,460
+we will represent with a pair each of the
+different configurations that can take place
+
+111
+00:06:47,820 --> 00:06:51,680
+that is, we have analyzed
+ zero as and zero bs,
+
+112
+00:06:52,240 --> 00:06:56,520
+an a and no bs, zero as
+ and at least one b
+
+113
+00:06:57,610 --> 00:06:59,390
+more than one a
+but none bs,
+
+114
+00:07:00,430 --> 00:07:02,220
+one a and at
+least one b,
+
+115
+00:07:03,000 --> 00:07:04,840
+and more than one a
+and at least one b.
+
+116
+00:07:06,920 --> 00:07:10,700
+The initial state will be state one and
+ state six will be the final state
+
+117
+00:07:12,160 --> 00:07:14,680
+the transitions of the automaton
+consider the changes caused by
+
+118
+00:07:14,680 --> 00:07:18,030
+the processing of each symbol,
+ thus, from state one
+
+119
+00:07:18,420 --> 00:07:23,420
+the processing of an a leads to state two
+and process one b leads to state three
+
+120
+00:07:24,160 --> 00:07:28,120
+and similarly you get transitions from
+state two, transitions from state three
+
+121
+00:07:28,500 --> 00:07:32,650
+from state four, from state five,
+ and, finally, from state six
+
+122
+00:07:33,570 --> 00:07:35,760
+obtaining the
+automaton shown
+

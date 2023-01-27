@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Box
+comment1.params=nad
+comment1.target=Box(int)
+comment2.params=g\ c\ i\ pos
+comment2.target=void\ rect(java.awt.Graphics,\ java.awt.Color,\ int,\ int)
+comment3.params=n\ i
+comment3.target=void\ state0(int,\ int)
+comment4.params=stat
+comment4.target=void\ state(State)
+comment5.params=g
+comment5.target=void\ paint(java.awt.Graphics)
+comment6.params=
+comment6.target=java.awt.Dimension\ getPreferredSize()
+numComments=7

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="s6.jnlp">
+  <information>
+    <title>s6</title>
+    <vendor>jose</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="s6.jar" size="4927" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="Main"  name="s6" />
+  <update check="always"/>
+</jnlp>

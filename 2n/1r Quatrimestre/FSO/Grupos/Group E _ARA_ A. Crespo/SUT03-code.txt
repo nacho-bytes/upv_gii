@@ -1,0 +1,244 @@
+/*** ej1_getpid.c *****/
+#include <stdio.h>
+#include <unistd.h>
+
+
+int main(void)
+{
+    printf("\nProcess ID: %ld\n", (long)getpid());
+
+    printf("Parent process ID: %ld\n", (long)getppid());
+
+    while(1);
+
+    return 0;
+}
+
+
+/**ej2_fork.c **/
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/types.h>
+
+int main(void)
+{ 
+  pid_t res;
+  
+  printf("Process %ld creates another process\n",
+         (long)getpid());
+  
+  res = fork();
+  
+  printf("Process %ld with parent %ld return value: %ld\n",
+         (long)getpid(), (long)getppid(), (long) res);
+  
+  sleep(10);
+  return 0;
+}
+
+// ej3_fork.c
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+int main() {
+     pid_t ret;
+     int var = 0;
+     
+     printf("PID before fork(): %ld\n", (long) getpid());
+     ret = fork();
+     if (ret > 0) {  //parent code
+       printf("Parent PID: %ld\n", (long) getpid());
+       var++;
+     } else {   // child code
+       printf("Child PID: %ld\n", (long) getpid());
+     }
+     printf("Process [%ld]-> var=%d ret: %d\n", (long) getpid(), var, ret);
+     sleep(2);
+     return 0;
+}
+
+
+// ej4_fork.c
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+int main(void)
+{
+    pid_t pid=fork();
+
+    switch (pid) {
+    case -1:
+        printf("Could not create child process \n");
+        break;
+
+    case 0:
+        printf("I am the child with PID %d and my parent is %d \n", 
+                  getpid(), getppid());
+        break;
+
+    default:
+        printf("I am the parent with PID %d and my child is %d \n", 
+                  getpid(), pid);
+    }
+
+    sleep(5);
+    return 0;
+}
+
+
+// ej5_proc_chain.c
+
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+#define NPROCESSES 4
+
+int main(void)
+{
+    pid_t pid;
+    int i;
+
+    for (i=0; i<NPROCESSES; i++) {
+        pid=fork();
+        if (pid!=0)
+            break;
+        printf("I am the child with PID %d my parent is %d\n", 
+                  getpid(), getppid());
+    }
+
+    sleep(5);
+    return 0;
+}
+
+
+// ej6_exec.c
+#include <stdio.h>
+#include <sys/types.h>
+
+int main(void)
+{
+    int status;
+    pid_t pid=fork();
+
+    char* arguments [] = { "ls", "-l", 0 };
+    
+    switch (pid) {
+    case -1:
+        printf("The child  process could not be created \n");
+        break;
+    case 0:
+        printf("I am the child with PID %ld, the current directory content is: \n",    
+                  (long)getpid());
+        if (execvp("ls",arguments)==-1){
+            printf("Error in exec\n");
+            exit(0);
+        }
+          break;
+    default:
+        printf("I am the parent process with PID %ld and my child is %d.\n", 
+                  (long)getpid(), pid)  
+    }
+    return 0;
+
+}
+
+// ej6a_exec.c
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int status;
+    pid_t pid=fork();
+
+    char* arguments [] = { "ps", "aux", 0 };
+    
+    switch (pid) {
+    case -1:
+        printf("The child  process could not be created \n");
+        break;
+    case 0:
+        printf("I am the child with PID %d, the current directory content is: \n",    
+                  getpid());
+        if (execvp("ps", arguments)==-1){
+            printf("Error in exec\n");
+            exit(0);
+        }
+          break;
+    default:
+        printf("I am the parent process with PID %d and my child is %d.\n", 
+                  getpid(), pid);  
+    }
+    return 0;
+}
+
+// ej7_wait.c
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <errno.h>
+
+int main(void)
+{
+    int status;
+    pid_t pid=fork();
+    
+    switch (pid) {
+    case -1:
+        printf(" The child  process could not be created \n");
+        break;
+    case 0:
+        printf("I am the child process with PID %d and my parent is %d \n", 
+                  getpid(), getppid());
+        sleep(20);
+        printf("I have finished \n");
+        break;
+    default:
+        printf("I am the parent process with PID %d and my child is %d.                   Waiting ...\n", getpid(), pid);
+        if (wait(&status) != -1)
+            printf("My child has ended ok \n");         
+    }
+    return 0;
+}
+
+
+// ej8_waitpid.c
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+
+#define NPROCESSES 4
+
+int main(void)
+{
+    pid_t pid[NPROCESSES];
+    int i, status;
+
+    for (i=0; i<NPROCESSES; i++) {
+        pid[i]=fork();
+        if (pid[i]==0){
+            printf("I am the child %d my parent is %d\n", 
+                       getpid(), getppid());
+            sleep(10);
+            printf("Process %d is exiting ... \n", getpid());
+            exit(0);
+        }
+    }
+    // Now wait for the third child
+    if (waitpid(pid[2],&status,0)==pid[2])
+        printf(" My child with pid %d has finished  \n", pid[2]);
+    return 0;
+}
+
+
+

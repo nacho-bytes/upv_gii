@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox alignment="CENTER" prefHeight="188.0" prefWidth="322.0" spacing="24.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLPersonaController">
+   <children>
+      <GridPane alignment="CENTER" hgap="6.0" prefHeight="82.0" prefWidth="219.0" vgap="6.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints halignment="LEFT" hgrow="NEVER" maxWidth="300.0" minWidth="-Infinity" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Nombre" GridPane.hgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label text="Apellidos" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="nombreTextF" GridPane.columnIndex="1" />
+            <TextField fx:id="apellidoTextF" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="12.0" right="6.0" top="12.0" />
+         </padding>
+      </GridPane>
+      <HBox alignment="CENTER" spacing="12.0" VBox.vgrow="NEVER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#okCambios" text="OK" />
+            <Button mnemonicParsing="false" onAction="#cancelCambios" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

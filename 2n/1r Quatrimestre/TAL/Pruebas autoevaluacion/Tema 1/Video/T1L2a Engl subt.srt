@@ -1,0 +1,374 @@
+1
+00:00:00,950 --> 00:00:03,280
+This video intuitively describes
+ the boolean operations
+
+2
+00:00:03,280 --> 00:00:04,960
+on formal languages
+
+3
+00:00:05,940 --> 00:00:08,330
+we insist on the intuitive
+ nature of the talk
+
+4
+00:00:09,120 --> 00:00:14,880
+and refer the student to the bibliography and the rest
+of the available material to delve into formal aspects
+
+5
+00:00:12,470 --> 00:00:14,880
+to delve into
+formal aspects
+
+6
+00:00:16,470 --> 00:00:18,660
+When we refer to
+Boolean operations
+
+7
+00:00:19,250 --> 00:00:23,270
+we do it to three well-known
+operations on the set theory
+
+8
+00:00:23,680 --> 00:00:26,840
+the union, the intersection,
+ and the complementary
+
+9
+00:00:28,260 --> 00:00:31,260
+identically to how these
+operations are defined in the
+
+10
+00:00:31,260 --> 00:00:32,780
+mentioned set theory,
+
+11
+00:00:33,580 --> 00:00:36,680
+given a set of words on
+a given alphabet sigma
+
+12
+00:00:37,260 --> 00:00:39,760
+and two languages
+ L1 and L2
+
+13
+00:00:40,430 --> 00:00:44,830
+the union of L1 and L2 languages
+ consists of considering
+
+14
+00:00:45,050 --> 00:00:49,250
+all words that belong
+either to L1 or to L2,
+
+15
+00:00:50,680 --> 00:00:54,630
+similarly the intersection
+of two languages L1 and L2
+
+16
+00:00:55,300 --> 00:01:00,120
+is formed by those words that
+ belong to both languages,
+
+17
+00:01:00,970 --> 00:01:06,090
+finally, the complementary of a language
+ L over a given alphabet sigma
+
+18
+00:01:06,430 --> 00:01:10,380
+consists of the set of words
+ that do not belong to L
+
+19
+00:01:11,730 --> 00:01:15,100
+To illustrate the behavior of
+ these language operations
+
+20
+00:01:15,750 --> 00:01:20,030
+let's consider initially the
+three finite languages shown,
+
+21
+00:01:21,380 --> 00:01:24,680
+the language L1 formed by
+ three words: lambda,
+
+22
+00:01:25,160 --> 00:01:30,210
+ab, and aab; language L2
+made up of four words
+
+23
+00:01:31,100 --> 00:01:34,800
+a, ab, ba, and bbab;
+
+24
+00:01:35,740 --> 00:01:39,540
+and the language L3 formed
+by the words whose length
+
+25
+00:01:39,540 --> 00:01:40,670
+is less than or
+equal to two
+
+26
+00:01:42,800 --> 00:01:46,080
+the union of L1 and L2
+consists of considering
+
+27
+00:01:47,050 --> 00:01:50,660
+all words that belong
+ to L1 and L2
+
+28
+00:01:52,290 --> 00:01:54,210
+the intersection
+ of L1 and L3
+
+29
+00:01:54,930 --> 00:01:57,400
+is formed by those
+ words of L1
+
+30
+00:01:57,890 --> 00:01:59,920
+having a length less
+than or equal to two
+
+31
+00:02:00,510 --> 00:02:03,960
+and the complementary of L3
+is formed by those words
+
+32
+00:02:03,960 --> 00:02:05,560
+which do not
+belong to L3
+
+33
+00:02:06,180 --> 00:02:11,390
+that is, the words on the
+alphabet a, b whose length is
+
+34
+00:02:11,650 --> 00:02:12,630
+greater than or
+equal to three
+
+35
+00:02:14,490 --> 00:02:19,330
+For a second set of examples
+ consider the language L1
+
+36
+00:02:19,620 --> 00:02:22,480
+as the language of words
+over the alphabet a, b
+
+37
+00:02:23,070 --> 00:02:26,890
+containing an odd number of
+as and an odd number of bs
+
+38
+00:02:27,560 --> 00:02:31,360
+the language L2 as the set of
+words over the alphabet a, b
+
+39
+00:02:31,800 --> 00:02:33,760
+with an even
+number of as
+
+40
+00:02:34,630 --> 00:02:39,100
+and the language L3 as the set of
+ words over the alphabet a, b
+
+41
+00:02:39,340 --> 00:02:41,850
+which do not contain
+ the segment ba
+
+42
+00:02:42,490 --> 00:02:45,380
+the union of the language
+ L1 and L2 contains
+
+43
+00:02:45,870 --> 00:02:48,500
+all words over the
+ alphabet a, b
+
+44
+00:02:49,190 --> 00:02:54,450
+that have an even number of
+as or an odd number of bs
+
+45
+00:02:55,960 --> 00:02:58,290
+the intersection of
+language L1 and L3
+
+46
+00:02:58,970 --> 00:03:03,080
+contains the words formed by
+a sequence of as followed
+
+47
+00:03:03,080 --> 00:03:04,370
+of a sequence of bs
+
+48
+00:03:05,080 --> 00:03:08,360
+and where the number
+of as and bs is odd
+
+49
+00:03:10,150 --> 00:03:14,670
+and complementary to L1
+ is the set of words
+
+50
+00:03:15,130 --> 00:03:19,000
+with an even number of as
+or an even number of bs
+
+51
+00:03:20,740 --> 00:03:24,120
+we note here that other
+operations on languages can
+
+52
+00:03:24,120 --> 00:03:26,840
+be described as a composition
+ of Boolean operations
+
+53
+00:03:27,270 --> 00:03:32,270
+for example, the difference of
+ languages, that is the set
+
+54
+00:03:32,270 --> 00:03:36,660
+of words that belong to one of them
+ and do not belong to the second
+
+55
+00:03:37,100 --> 00:03:42,040
+can be described as the intersection
+ of the first language
+
+56
+00:03:42,340 --> 00:03:43,910
+with the complementary
+ of the second
+
+57
+00:03:45,070 --> 00:03:49,460
+As an example, considering
+ language L1 as the set
+
+58
+00:03:49,460 --> 00:03:53,040
+of words on alphabet a, b
+with an odd number of as
+
+59
+00:03:54,440 --> 00:03:58,120
+and the language L2 as the set
+of words on the alphabet a, b
+
+60
+00:03:58,380 --> 00:03:59,800
+with an even
+number of bs
+
+61
+00:04:00,430 --> 00:04:02,290
+the difference
+of L1 with L2
+
+62
+00:04:02,970 --> 00:04:04,830
+contains the words
+
+63
+00:04:05,530 --> 00:04:08,700
+with odd number of as and
+ a pair number of bs
+
+64
+00:04:09,950 --> 00:04:13,400
+similarly the symmetrical
+difference of two languages L1
+
+65
+00:04:13,400 --> 00:04:17,840
+L2 contains all the words
+that belong exclusively
+
+66
+00:04:17,850 --> 00:04:20,820
+to one of the two languages,
+ and can be described
+
+67
+00:04:21,470 --> 00:04:24,360
+using Boolean operations such
+ as the intersection of
+
+68
+00:04:24,360 --> 00:04:26,480
+first of them with the
+complementary of the second
+
+69
+00:04:27,540 --> 00:04:33,230
+united to the intersection of the second of the
+languages with the complementary of the first
+
+70
+00:04:34,630 --> 00:04:38,680
+An example, considering
+ the set of words on
+
+71
+00:04:38,680 --> 00:04:41,590
+alphabet a b with an
+even number of as
+
+72
+00:04:42,320 --> 00:04:46,470
+and the set of words over alphabet
+ a, b with an even number of bs
+
+73
+00:04:47,020 --> 00:04:51,660
+the symmetric difference contains
+those words over the alphabet a, b
+
+74
+00:04:52,110 --> 00:04:57,510
+such that, if the number of as is
+even then the number of bs is odd,
+
+75
+00:04:57,830 --> 00:05:00,930
+and if the number of as is
+odd then the number of bs
+
+76
+00:05:01,050 --> 00:05:02,190
+in the word is even.
+

@@ -1,0 +1,382 @@
+1
+00:00:00,770 --> 00:00:06,340
+In this video, some operations based on the product
+ of formal languages are intuitively explained
+
+2
+00:00:04,150 --> 00:00:06,340
+based on the product of formal
+languages are intuitively explained
+
+3
+00:00:07,380 --> 00:00:09,690
+we point out the intuitive
+nature of the explanation
+
+4
+00:00:10,120 --> 00:00:13,480
+and refer to the student to the
+recommended bibliography and
+
+5
+00:00:13,480 --> 00:00:16,990
+the rest of the material available
+to delve into more formal aspects
+
+6
+00:00:18,240 --> 00:00:22,640
+Of course, this video should begin by dealing
+ with the product of formal languages
+
+7
+00:00:23,180 --> 00:00:26,770
+that, given two languages L1
+and L2 over a Sigma alphabet,
+
+8
+00:00:27,210 --> 00:00:30,830
+is defined as the set of
+words that can be obtained
+
+9
+00:00:31,200 --> 00:00:33,670
+by concatenating a word
+in the first language
+
+10
+00:00:34,230 --> 00:00:38,200
+and another word in the second
+language, regardless the result
+
+11
+00:00:38,580 --> 00:00:40,700
+belongs to the
+first language,
+
+12
+00:00:41,440 --> 00:00:43,960
+to L2, or to
+none of them.
+
+13
+00:00:45,510 --> 00:00:50,640
+As a first example, consider the
+two finite languages in the image
+
+14
+00:00:51,890 --> 00:00:55,020
+the product of these languages,
+that can be noted using the two
+
+15
+00:00:55,020 --> 00:00:56,640
+ways shown in
+the image,
+
+16
+00:00:57,270 --> 00:01:00,370
+contains all the words that can
+ be divided into two factors
+
+17
+00:01:00,720 --> 00:01:04,410
+the first of them in L1
+and the second in L2
+
+18
+00:01:06,160 --> 00:01:10,120
+As another example, let's consider
+the three languages in the image
+
+19
+00:01:10,920 --> 00:01:14,550
+the first of them is the language
+ of words over alphabet a, b
+
+20
+00:01:14,800 --> 00:01:16,210
+that end with a
+
+21
+00:01:17,440 --> 00:01:19,640
+the second of them is the
+set of words on the same
+
+22
+00:01:19,640 --> 00:01:21,770
+alphabet beginning
+with the symbol b
+
+23
+00:01:22,530 --> 00:01:28,230
+and the third the set of words over
+the alphabet a, b with exactly one b
+
+24
+00:01:28,610 --> 00:01:31,570
+where this symbol is the
+ suffix of the word.
+
+25
+00:01:32,660 --> 00:01:34,460
+The product of
+ L1 and L2
+
+26
+00:01:35,240 --> 00:01:39,400
+results in the set of words
+ containing segment ab,
+
+27
+00:01:40,510 --> 00:01:43,480
+and the product of
+languages L1 and L3
+
+28
+00:01:43,890 --> 00:01:47,560
+results in the set of
+words over alphabet a, b
+
+29
+00:01:48,010 --> 00:01:50,500
+such that ab is a
+suffix of the word
+
+30
+00:01:52,080 --> 00:01:55,200
+Once the product of languages has
+ been defined, the power of a
+
+31
+00:01:55,200 --> 00:01:59,710
+language L over an alphabet sigma
+is defined as the concatenation
+
+32
+00:01:59,710 --> 00:02:01,380
+of a serie of words
+in the language,
+
+33
+00:02:02,430 --> 00:02:05,760
+in such a way that the n-th power
+of the language is composed by
+
+34
+00:02:05,760 --> 00:02:10,360
+all the words that are the result
+of concatenating n words in L.
+
+35
+00:02:11,200 --> 00:02:14,470
+As a first example, let us consider
+ the finite language that
+
+36
+00:02:14,470 --> 00:02:16,330
+contains only
+two words,
+
+37
+00:02:17,110 --> 00:02:18,980
+lambda and the word a
+
+38
+00:02:19,760 --> 00:02:23,410
+the third power of this language
+contains all the words formed
+
+39
+00:02:23,550 --> 00:02:27,270
+by a number less than or equal
+ to three of symbols a.
+
+40
+00:02:28,980 --> 00:02:32,800
+As a second example, consider the
+ language formed by the words
+
+41
+00:02:33,000 --> 00:02:35,860
+which are the result of
+concatenating to a sequence
+
+42
+00:02:36,400 --> 00:02:39,880
+of n symbols b
+a symbol a,
+
+43
+00:02:41,040 --> 00:02:44,310
+the fourth power of this language
+ contains all the words
+
+44
+00:02:44,740 --> 00:02:48,890
+with exactly four as being one
+of them suffix of the word.
+
+45
+00:02:50,710 --> 00:02:54,450
+although the n-th power of a
+language contains exclusively
+
+46
+00:02:54,450 --> 00:02:59,120
+the words that can be obtained by
+ concatenation of n words of L
+
+47
+00:03:00,150 --> 00:03:03,870
+the concatenation of any number
+ of words in the language
+
+48
+00:03:04,700 --> 00:03:10,900
+always returns a word that belongs to
+ the star closure of the language
+
+49
+00:03:11,440 --> 00:03:15,970
+this word will also belong to the
+positive closure of the language
+
+50
+00:03:16,300 --> 00:03:20,200
+if at least one of the words of
+the language has been considered
+
+51
+00:03:21,300 --> 00:03:23,790
+another way to define
+the star closure of L
+
+52
+00:03:24,490 --> 00:03:28,600
+or L star, is as the union of
+all the powers of language,
+
+53
+00:03:29,380 --> 00:03:34,390
+similarly, the positive closure
+ of l or L plus is defined
+
+54
+00:03:34,390 --> 00:03:37,580
+as the union of all the powers of
+the language greater than zero.
+
+55
+00:03:39,630 --> 00:03:43,690
+As examples to illustrate these
+ operations we will consider
+
+56
+00:03:43,690 --> 00:03:46,590
+languages in the
+ image, L1
+
+57
+00:03:47,060 --> 00:03:50,110
+that contains only one
+ word, the word a:
+
+58
+00:03:51,030 --> 00:03:55,010
+L2 which is also finite and
+contains the words lambda
+
+59
+00:03:55,250 --> 00:04:01,830
+b, ba. and bb; and language
+ L3 containing the words
+
+60
+00:04:01,830 --> 00:04:06,620
+formed by a sequence of symbols
+ b of any length, that end
+
+61
+00:04:06,760 --> 00:04:11,460
+with a symbol a. In the first
+ case the star closure of 
+
+62
+00:04:09,110 --> 00:04:11,460
+case the star
+closure of l 
+
+63
+00:04:09,110 --> 00:04:11,460
+case the star
+closure of l 
+
+64
+00:04:11,460 --> 00:04:15,010
+L1 contains the words formed
+ by a sequence of symbols
+
+65
+00:04:15,020 --> 00:04:16,300
+a of any length,
+
+66
+00:04:17,570 --> 00:04:21,200
+and the positive closure of L1
+ contains the words formed
+
+67
+00:04:21,680 --> 00:04:25,710
+by sequences of symbols
+of length at least one.
+
+68
+00:04:27,430 --> 00:04:30,240
+When the star and positive
+closure operations are applied
+
+69
+00:04:30,240 --> 00:04:34,560
+on language L2, results the
+ same language, that is,
+
+70
+00:04:34,820 --> 00:04:38,570
+the language of words on alphabet
+ a, b that do not contain
+
+71
+00:04:39,100 --> 00:04:42,940
+the segment aa and do not
+start with the symbol a.
+
+72
+00:04:45,140 --> 00:04:48,550
+In the third case, the star
+ closure of language L3
+
+73
+00:04:49,550 --> 00:04:53,270
+contains those words
+over alphabet a,b such
+
+74
+00:04:53,700 --> 00:04:57,640
+that a is a suffix of the word,
+the word ends with the symbol a,
+
+75
+00:04:57,870 --> 00:04:59,250
+together with the
+ word lambda.
+
+76
+00:05:00,000 --> 00:05:04,020
+Positive closing of the
+language L3 contains strictly
+
+77
+00:05:04,380 --> 00:05:06,770
+the set of words on alphabet
+ a, b that end with a.
+

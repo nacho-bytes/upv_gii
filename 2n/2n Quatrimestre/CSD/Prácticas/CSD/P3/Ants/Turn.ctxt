@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Turn
+comment0.text=\r\n\ Ant\ turns\ to\ a\ Dir\r\n\ \r\n\ @author\ CSD\ Juansa\ Sendra\r\n\ @version\ 2021\r\n
+comment1.params=a\ d
+comment1.target=Turn(int,\ Dir)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

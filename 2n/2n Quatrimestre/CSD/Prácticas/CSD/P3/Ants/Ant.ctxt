@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Ant
+comment1.params=a\ t\ movs
+comment1.target=Ant(int,\ Terrain,\ int)
+comment2.params=
+comment2.target=void\ delay()
+comment3.params=
+comment3.target=void\ run()
+numComments=4

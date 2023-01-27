@@ -1,0 +1,587 @@
+1
+00:00:00,740 --> 00:00:04,290
+theme one alphabet
+words languages
+
+2
+00:00:05,420 --> 00:00:06,290
+lesson One
+
+3
+00:00:07,960 --> 00:00:11,800
+the references shown can help
+ the study of this lesson
+
+4
+00:00:13,780 --> 00:00:16,860
+A central concept in the theory
+ of automata and languages
+
+5
+00:00:16,960 --> 00:00:18,640
+it's the concept of
+ formal language
+
+6
+00:00:19,390 --> 00:00:22,350
+to reach it we will start from
+ the definition of alphabet
+
+7
+00:00:23,830 --> 00:00:27,530
+an alphabet is defined as
+any non-empty finite set
+
+8
+00:00:28,160 --> 00:00:31,000
+Its items will be called
+ symbols or letters
+
+9
+00:00:32,240 --> 00:00:34,050
+some examples of
+alphabets are
+
+10
+00:00:34,920 --> 00:00:38,020
+the alphabet of two
+symbols a and b...
+
+11
+00:00:39,210 --> 00:00:42,050
+or the set of binary
+digits zero, one...
+
+12
+00:00:43,330 --> 00:00:45,350
+the set of
+decimal digits,
+
+13
+00:00:46,310 --> 00:00:50,060
+or the lowercase letters of the
+ alphabet are also alphabets
+
+14
+00:00:51,400 --> 00:00:55,160
+as well as the set of all the different
+ words contained in Don Quixote
+
+15
+00:00:57,250 --> 00:01:01,920
+To denote alphabets we will usually
+ use uppercase Greek letters
+
+16
+00:01:01,920 --> 00:01:04,970
+as sigma, delta, gamma
+
+17
+00:01:07,650 --> 00:01:11,910
+Using the symbols of an alphabet,
+the words or strings are build
+
+18
+00:01:12,740 --> 00:01:16,750
+which represent the equivalent of
+sentences in natural language.
+
+19
+00:01:18,710 --> 00:01:20,980
+A word is a finite
+sequence of symbols,
+
+20
+00:01:22,730 --> 00:01:29,330
+to identify words we will use the lowercase
+symbols of the Latin alphabet u, v, w, etc.
+
+21
+00:01:29,330 --> 00:01:35,920
+as examples of words, and
+given the alphabet a, b
+
+22
+00:01:38,550 --> 00:01:43,320
+a and bbab, among others,
+ are valid words.
+
+23
+00:01:45,920 --> 00:01:49,740
+Given a word sometimes we
+will refer to its length
+
+24
+00:01:50,150 --> 00:01:52,650
+that is, the number of
+symbols that compose it
+
+25
+00:01:55,440 --> 00:02:00,990
+the length is usually noted by
+enclosing the identifier between bars
+
+26
+00:02:01,230 --> 00:02:01,960
+of the word
+
+27
+00:02:03,750 --> 00:02:07,480
+as an example if we
+consider the word bbab
+
+28
+00:02:08,440 --> 00:02:09,920
+we see that its
+length is four
+
+29
+00:02:12,120 --> 00:02:14,590
+the existence of the
+zero-length word is admitted
+
+30
+00:02:15,980 --> 00:02:18,970
+this will be denoted
+with the lambda symbol
+
+31
+00:02:21,270 --> 00:02:25,460
+sometimes it will be useful to refer
+ to the number of occurrences
+
+32
+00:02:25,460 --> 00:02:26,770
+of a symbol in a word
+
+33
+00:02:28,270 --> 00:02:34,220
+we denote this number by adding
+ a sub-index to the bars
+
+34
+00:02:34,220 --> 00:02:36,110
+which denoted the
+length of a word
+
+35
+00:02:37,730 --> 00:02:42,110
+thus if x is equal
+to the word bbab
+
+36
+00:02:42,710 --> 00:02:47,670
+so the number of occurrences
+ of symbol a in x is one
+
+37
+00:02:48,000 --> 00:02:51,700
+and the number of occurrences
+of the symbol b in x is three
+
+38
+00:02:53,780 --> 00:02:57,170
+An interesting set of words
+ on a sigma alphabet
+
+39
+00:02:57,380 --> 00:03:00,420
+is the set of words
+of a given length n
+
+40
+00:03:01,790 --> 00:03:05,980
+this set will be denoted using
+ n as an exponent of sigma
+
+41
+00:03:08,310 --> 00:03:11,810
+as examples, and given
+Sigma equal to a, b
+
+42
+00:03:12,920 --> 00:03:17,740
+Sigma zero is the set containing
+ exclusively the word lambda
+
+43
+00:03:18,350 --> 00:03:22,640
+and Sigma three is the set of all the
+words of as and bs of length three
+
+44
+00:03:24,570 --> 00:03:27,970
+another set of interest is
+that of all possible words
+
+45
+00:03:29,350 --> 00:03:32,390
+we will denote this
+set as Sigma star
+
+46
+00:03:35,300 --> 00:03:39,650
+a little more formally as the
+ union of all sets Sigma i
+
+47
+00:03:39,980 --> 00:03:41,140
+where i is an integer
+
+48
+00:03:42,820 --> 00:03:46,020
+we will also refer to
+the whole set of words
+
+49
+00:03:46,020 --> 00:03:47,960
+over sigma of length
+greater than zero
+
+50
+00:03:48,620 --> 00:03:52,140
+this set will be
+denoted as Sigma plus
+
+51
+00:03:53,970 --> 00:03:58,910
+obviously, the relationship between the
+sigma star and sigma mas sets is close
+
+52
+00:04:01,330 --> 00:04:04,960
+the set Sigma star can be
+ordered in different ways
+
+53
+00:04:05,320 --> 00:04:07,780
+one of them is the
+so-called canonical order
+
+54
+00:04:08,810 --> 00:04:12,130
+this order states that one
+word precedes another if
+
+55
+00:04:12,130 --> 00:04:13,220
+its length is smaller
+
+56
+00:04:14,010 --> 00:04:19,060
+or if it is before alphabetically
+when words have the same length
+
+57
+00:04:20,960 --> 00:04:25,400
+As an example taking again
+ sigma equal to a, b
+
+58
+00:04:26,620 --> 00:04:30,380
+bb is previous to aaa
+
+59
+00:04:31,870 --> 00:04:34,590
+and aba is
+previous to baa
+
+60
+00:04:37,280 --> 00:04:40,700
+we also show the numbering
+ of the first words
+
+61
+00:04:40,710 --> 00:04:43,290
+of sigma star using
+the canonical order
+
+62
+00:04:46,500 --> 00:04:51,540
+an internal operation called
+concatenation is defined in sigma star
+
+63
+00:04:52,710 --> 00:04:56,920
+given two words this operation
+ returns the word resulting
+
+64
+00:04:57,130 --> 00:05:00,080
+of arranging the symbols
+of the second word after
+
+65
+00:05:00,080 --> 00:05:01,320
+the symbols of
+ the first
+
+66
+00:05:02,420 --> 00:05:06,250
+as examples, it is shown the
+ result of concatenating 
+
+67
+00:05:07,130 --> 00:05:15,760
+aab and bbab as well as
+concatenating lambda and bab
+
+68
+00:05:17,570 --> 00:05:21,370
+also mention that the dot
+operator is usually omitted
+
+69
+00:05:23,080 --> 00:05:27,710
+We also mention also that the concatenation
+ is associative and has neutral element
+
+70
+00:05:27,990 --> 00:05:29,190
+and that it is
+not commutative
+
+71
+00:05:32,460 --> 00:05:36,720
+to shorten the notation when
+a symbol or piece of word
+
+72
+00:05:36,720 --> 00:05:40,920
+repeats n times it is denoted
+using exponential notation
+
+73
+00:05:42,550 --> 00:05:45,660
+in this way given
+ any word x
+
+74
+00:05:46,120 --> 00:05:50,090
+x to zero is lambda
+and x to one is x
+
+75
+00:05:51,850 --> 00:05:56,290
+as examples, the result of
+aab to the cube is shown
+
+76
+00:05:57,240 --> 00:05:59,400
+of lambda to the
+ seventeenth
+
+77
+00:06:00,620 --> 00:06:02,820
+and of a to two
+b to the cube
+
+78
+00:06:06,520 --> 00:06:08,490
+the reverse of a word
+ is also defined
+
+79
+00:06:08,990 --> 00:06:13,680
+as the resulting word of reading
+the symbols from right to left
+
+80
+00:06:15,100 --> 00:06:16,040
+as examples
+
+81
+00:06:17,530 --> 00:06:20,460
+the reverse of
+lambda is lambda
+
+82
+00:06:21,440 --> 00:06:27,870
+and the reverse of aaba is the same
+ word since it is a palindrome.
+
+83
+00:06:30,020 --> 00:06:32,670
+some of the properties of
+ the reverse are shown
+
+84
+00:06:35,290 --> 00:06:38,280
+segments of a word are
+also defined as any
+
+85
+00:06:38,280 --> 00:06:40,160
+sequence of
+consecutive symbols
+
+86
+00:06:41,410 --> 00:06:45,940
+every initial segment is a prefix
+ and every final segment is
+
+87
+00:06:45,940 --> 00:06:47,160
+a suffix of the word
+
+88
+00:06:49,010 --> 00:06:49,920
+as an example
+
+89
+00:06:51,830 --> 00:06:52,960
+given the word
+
+90
+00:06:54,240 --> 00:06:55,600
+of the screen
+
+91
+00:06:56,940 --> 00:06:58,420
+some of its
+segments are
+
+92
+00:07:00,310 --> 00:07:06,440
+bac, bb, acc,
+and lambda
+
+93
+00:07:09,230 --> 00:07:12,920
+among its
+prefixes are a
+
+94
+00:07:14,310 --> 00:07:16,880
+aba among others
+
+95
+00:07:18,470 --> 00:07:20,210
+and some of its
+suffixes are
+
+96
+00:07:21,090 --> 00:07:26,590
+bbacc, the same
+word, or lambda
+
+97
+00:07:29,510 --> 00:07:33,530
+we will denote with x Seg
+the set of segments of x
+
+98
+00:07:33,530 --> 00:07:38,910
+with Pref of x the set of prefixes
+ of x and with Suf of x the set
+
+99
+00:07:38,910 --> 00:07:40,070
+of suffixes of x
+
+100
+00:07:42,490 --> 00:07:45,670
+we show as an example the
+sets of segments, prefixes
+
+101
+00:07:45,670 --> 00:07:47,760
+and suffixes of
+the word aba
+
+102
+00:07:52,950 --> 00:07:56,910
+defined word, alphabet,
+and set of all possible
+
+103
+00:07:56,910 --> 00:07:59,280
+words, we get to the
+notion of language
+
+104
+00:08:02,200 --> 00:08:06,250
+given any alphabet sigma
+a language is any set
+
+105
+00:08:06,250 --> 00:08:07,510
+of words over sigma
+
+106
+00:08:08,370 --> 00:08:11,310
+that is, any subset
+ of sigma star
+
+107
+00:08:13,020 --> 00:08:16,250
+as an example, and given
+the alphabet zero, one
+
+108
+00:08:17,250 --> 00:08:21,110
+the set of all words starting
+ with zero is a language
+
+109
+00:08:22,700 --> 00:08:26,250
+what can be more formally
+ denoted as shown
+
+110
+00:08:27,470 --> 00:08:30,590
+the set of words with the same
+ number of zeros and ones
+
+111
+00:08:30,910 --> 00:08:31,990
+is also a language
+
+112
+00:08:32,890 --> 00:08:36,840
+which can be easily noted using the
+ number of occurrences operator
+
+113
+00:08:36,840 --> 00:08:38,710
+that we have
+seen before
+
+114
+00:08:40,290 --> 00:08:44,780
+Another language, is the set of
+words with length less than three
+
+115
+00:08:46,570 --> 00:08:49,360
+this can be fully enumerated
+because it is a finite language
+
+116
+00:08:51,250 --> 00:08:54,980
+the set of palindromes over
+ zero, one is a language
+
+117
+00:08:55,390 --> 00:08:57,320
+what can be noted
+using the operator
+
+118
+00:08:57,720 --> 00:08:59,310
+reverse as shown
+
+119
+00:09:02,470 --> 00:09:07,650
+Other languages are zero one
+star, zero one more, the set
+
+120
+00:09:07,650 --> 00:09:09,120
+of words of length four
+
+121
+00:09:09,810 --> 00:09:13,540
+empty language or language
+containing exclusively lambda
+

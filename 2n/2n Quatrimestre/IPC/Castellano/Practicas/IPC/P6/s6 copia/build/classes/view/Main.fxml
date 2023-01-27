@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="6.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Notas IPC">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <PieChart fx:id="pie" />
+      <BarChart fx:id="bar">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="6.0">
+         <children>
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aumentarCategoria" text="Suspenso" />
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aumentarCategoria" text="Aprobado" />
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aumentarCategoria" text="Notable" />
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aumentarCategoria" text="Sobresaliente" />
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aumentarCategoria" text="MH" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="24.0" left="12.0" right="12.0" top="12.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,10 @@
+ 
+# Ejercicios introductorios de lenguaje C
+
+1.- Función main(). "printf". Hola mundo y muestra números (decimal, punto flotante, control de dígitos).
+2.- Funciones. Prototipos. Macros. Modificar 1 pasando los números como parámetros.
+3.- Bucles. Imprimir tabla ASCII.
+4.- Paso de parámetros por referencia.
+4.- Punteros. Arrays. Strings. scanf, fprintf, sscanf.
+5.- Aritmética de punteros. Arrays de "int", "float" "char"... sizeof().
+5.- Parámetros de main.

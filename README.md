@@ -8,6 +8,6 @@ Espere que et siga d’ajuda i el comparteixes en qualsevol que li puga ser d’
 # ¡Hola! :wave:
 Bienvenido a mi repositorio de toda la carrera. Aquí encontrarás todo lo que he ido haciendo desde el primerísimo día. De la misma forma que yo encontré repositorios de otros cracks de la carrera, he visto conveniente hacer lo mismo para las siguientes generaciones.
 
-Me gustaría aprovechar para recordar que este repositorio debe ser simplemente una referencia para cuando vayas perdido y no sepas cómo o seguir o en el caso de que encuentras recursos que no tienes disponibles ahora misma. Recuerda, solas eso que nos conocimos :)
+Me gustaría aprovechar para recordar que este repositorio debe ser simplemente una referencia para cuando vayas perdido y no sepas cómo o seguir o en el caso de que encuentras recursos que no tienes disponibles ahora misma. Recuerda, solo eso que nos conocimos :)
 
-Espero que te siga de ayuda y lo compartas en cualquiera que le pueda ser de ayuda también. Una estrelleta sería de agradecer, ¡nos vemos por la facultad!
+Espero que te siga de ayuda y lo compartas en cualquiera que le pueda ser de ayuda también. Una estrellita sería de agradecer, ¡nos vemos por la facultad!

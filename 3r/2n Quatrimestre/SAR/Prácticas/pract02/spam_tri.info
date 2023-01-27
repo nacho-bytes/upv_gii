@@ -1,0 +1,73 @@
+####################
+#       INFO       #
+####################
+filename: 'pract02/spam.txt'
+
+####################
+#     BIGRAMS      #
+####################
+$	=>	11	=>	spam:5 egg:5 lobster:1
+a	=>	2	=>	mornay:1 fried:1
+and	=>	12	=>	spam:9 bacon:2 a:1
+aux	=>	1	=>	crevettes:1
+bacon	=>	6	=>	sausage:2 and:2 $:2
+baked	=>	1	=>	beans:1
+beans	=>	1	=>	spam:1
+brandy	=>	1	=>	and:1
+crevettes	=>	1	=>	with:1
+egg	=>	9	=>	and:3 sausage:2 bacon:2 spam:1 on:1
+fried	=>	1	=>	egg:1
+garnished	=>	1	=>	with:1
+lobster	=>	1	=>	thermidor:1
+mornay	=>	1	=>	sauce:1
+on	=>	1	=>	top:1
+pate	=>	1	=>	brandy:1
+sauce	=>	1	=>	garnished:1
+sausage	=>	4	=>	and:4
+spam	=>	27	=>	spam:11 $:9 egg:3 bacon:2 baked:1 and:1
+thermidor	=>	1	=>	aux:1
+top	=>	1	=>	and:1
+truffle	=>	1	=>	pate:1
+with	=>	2	=>	truffle:1 a:1
+
+####################
+#     TRIGRAMS     #
+####################
+('$', 'egg')	=>	5	=>	bacon:2 and:2 sausage:1
+('$', 'lobster')	=>	1	=>	thermidor:1
+('$', 'spam')	=>	5	=>	spam:2 egg:2 bacon:1
+('a', 'fried')	=>	1	=>	egg:1
+('a', 'mornay')	=>	1	=>	sauce:1
+('and', 'a')	=>	1	=>	fried:1
+('and', 'bacon')	=>	2	=>	$:2
+('and', 'spam')	=>	9	=>	$:9
+('aux', 'crevettes')	=>	1	=>	with:1
+('bacon', 'and')	=>	2	=>	spam:2
+('bacon', 'sausage')	=>	2	=>	and:2
+('baked', 'beans')	=>	1	=>	spam:1
+('beans', 'spam')	=>	1	=>	spam:1
+('brandy', 'and')	=>	1	=>	a:1
+('crevettes', 'with')	=>	1	=>	a:1
+('egg', 'and')	=>	3	=>	spam:2 bacon:1
+('egg', 'bacon')	=>	2	=>	sausage:1 and:1
+('egg', 'on')	=>	1	=>	top:1
+('egg', 'sausage')	=>	2	=>	and:2
+('egg', 'spam')	=>	1	=>	spam:1
+('fried', 'egg')	=>	1	=>	on:1
+('garnished', 'with')	=>	1	=>	truffle:1
+('lobster', 'thermidor')	=>	1	=>	aux:1
+('mornay', 'sauce')	=>	1	=>	garnished:1
+('on', 'top')	=>	1	=>	and:1
+('pate', 'brandy')	=>	1	=>	and:1
+('sauce', 'garnished')	=>	1	=>	with:1
+('sausage', 'and')	=>	4	=>	spam:3 bacon:1
+('spam', 'and')	=>	1	=>	spam:1
+('spam', 'bacon')	=>	2	=>	sausage:1 and:1
+('spam', 'baked')	=>	1	=>	beans:1
+('spam', 'egg')	=>	3	=>	spam:1 sausage:1 and:1
+('spam', 'spam')	=>	11	=>	spam:7 egg:1 baked:1 bacon:1 and:1
+('thermidor', 'aux')	=>	1	=>	crevettes:1
+('top', 'and')	=>	1	=>	spam:1
+('truffle', 'pate')	=>	1	=>	brandy:1
+('with', 'a')	=>	1	=>	mornay:1
+('with', 'truffle')	=>	1	=>	pate:1

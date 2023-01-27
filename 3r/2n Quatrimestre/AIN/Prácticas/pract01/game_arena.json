@@ -1,0 +1,38 @@
+{
+    "host": "gtirouter.dsic.upv.es",
+    "manager": "nachoM",
+    "manager_password": "secret",
+    "service": "nachoS",
+    "service_password": "secret",
+    "axis": [
+		{
+            "rank": "BDISoldier",
+            "name": "luchador",
+            "password": "secret",
+            "amount": 5,
+            "asl": "luchador.asl"
+        },
+        {
+            "rank": "nuestro_luchador.BDIDeaSoldier",
+            "name": "fast_death",
+            "password": "secret",
+            "asl": "nuestro_luchador.asl"
+        }
+    ],
+     "allied": [
+                {
+            "rank": "invencibleM.BDIMInvencible",
+            "name": "medic",
+            "password": "secret",
+            "amount": 0,
+            "asl": "medic_arena.asl"
+        }, 
+        {
+            "rank": "invencibleF.BDIFInvencible",
+            "name": "fieldop",
+            "password": "secret",
+            "amount": 1,
+            "asl": "fieldop_arena.asl"
+        }
+   ]
+  }

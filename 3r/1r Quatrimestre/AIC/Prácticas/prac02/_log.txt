@@ -1,0 +1,31 @@
+Ciclo: 7, Señal: BXX IDstall, IFstall; Rdst ld r12,0(r1)(en MEM) == Rfte bnez r12,nz(en ID)
+Ciclo: 8, Señal: Salto Efectivo; Instrucción bnez r12,nz
+Ciclo: 10, Señal: Salto Efectivo; Instrucción bnez r4,loop
+Ciclo: 14, Señal: BXX IDstall, IFstall; Rdst ld r12,0(r1)(en MEM) == Rfte bnez r12,nz(en ID)
+Ciclo: 15, Señal: Salto Efectivo; Instrucción bnez r12,nz
+Ciclo: 17, Señal: Salto Efectivo; Instrucción bnez r4,loop
+Ciclo: 21, Señal: BXX IDstall, IFstall; Rdst ld r12,0(r1)(en MEM) == Rfte bnez r12,nz(en ID)
+Ciclo: 24, Señal: Salto Efectivo; Instrucción bnez r4,loop
+Ciclo: 28, Señal: BXX IDstall, IFstall; Rdst ld r12,0(r1)(en MEM) == Rfte bnez r12,nz(en ID)
+Ciclo: 29, Señal: Salto Efectivo; Instrucción bnez r12,nz
+Ciclo: 31, Señal: Salto Efectivo; Instrucción bnez r4,loop
+Ciclo: 35, Señal: BXX IDstall, IFstall; Rdst ld r12,0(r1)(en MEM) == Rfte bnez r12,nz(en ID)
+Ciclo: 38, Señal: Salto Efectivo; Instrucción bnez r4,loop
+Ciclo: 42, Señal: BXX IDstall, IFstall; Rdst ld r12,0(r1)(en MEM) == Rfte bnez r12,nz(en ID)
+Ciclo: 43, Señal: Salto Efectivo; Instrucción bnez r12,nz
+Ciclo: 45, Señal: Salto Efectivo; Instrucción bnez r4,loop
+Ciclo: 49, Señal: BXX IDstall, IFstall; Rdst ld r12,0(r1)(en MEM) == Rfte bnez r12,nz(en ID)
+Ciclo: 50, Señal: Salto Efectivo; Instrucción bnez r12,nz
+Ciclo: 52, Señal: Salto Efectivo; Instrucción bnez r4,loop
+Ciclo: 56, Señal: BXX IDstall, IFstall; Rdst ld r12,0(r1)(en MEM) == Rfte bnez r12,nz(en ID)
+Ciclo: 57, Señal: Salto Efectivo; Instrucción bnez r12,nz
+Ciclo: 59, Señal: Salto Efectivo; Instrucción bnez r4,loop
+Ciclo: 63, Señal: BXX IDstall, IFstall; Rdst ld r12,0(r1)(en MEM) == Rfte bnez r12,nz(en ID)
+Ciclo: 64, Señal: Salto Efectivo; Instrucción bnez r12,nz
+Ciclo: 66, Señal: Salto Efectivo; Instrucción bnez r4,loop
+Ciclo: 70, Señal: BXX IDstall, IFstall; Rdst ld r12,0(r1)(en MEM) == Rfte bnez r12,nz(en ID)
+Ciclo: 76, Señal: IFstall; Instrucción trap 0
+Ciclo: 77, Señal: corto WBaMEM; Rdst dadd r10,r10,1(en WB) == Rfte sd r10,%disp[cont](r28)(en MEM)
+Ciclo: 77, Señal: IFstall; Instrucción trap 0
+Ciclo: 78, Señal: IFstall; Instrucción trap 0
+Ciclo: 79, Señal: IFstall; Instrucción trap 0

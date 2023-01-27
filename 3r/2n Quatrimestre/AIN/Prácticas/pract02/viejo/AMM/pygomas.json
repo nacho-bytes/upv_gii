@@ -1,0 +1,53 @@
+{
+    "host": "gtirouter.dsic.upv.es",
+    "manager": "m_madiapas",
+    "manager_password": "secret",
+    "service": "s_madiapas",
+    "service_password": "secret",
+    "axis": [
+		{
+            "rank": "my_axis_troops.MySoldier",
+            "name": "axis_solRaso",
+            "password": "secret",
+            "amount": 2,
+            "asl": "mybdisoldier.asl"
+        },
+        {
+            "rank": "my_axis_troops.MyMedic",
+            "name": "axis_medRaso",
+            "password": "secret",
+            "amount": 3,
+            "asl": "mybdimedic.asl"
+        },
+         {
+            "rank": "my_axis_troops.MyFieldOp",
+            "name": "axis_fieRaso",
+            "password": "secret",
+            "amount": 0,
+            "asl": "mybdifieldop.asl"
+        }
+    ],
+     "allied": [
+		{
+            "rank": "BDISoldier",
+            "name": "allied_defaultSol",
+            "password": "secret",
+            "amount": 4,
+            "asl": "bdisoldier.asl"
+        },
+        {
+            "rank": "BDIMedic",
+            "name": "allied_defaultMed",
+            "password": "secret",
+            "amount": 0,
+            "asl": "bdimedic.asl"
+        },
+         {
+            "rank": "BDIFieldOp",
+            "name": "allied_defaultFie",
+            "password": "secret",
+            "amount": 0,
+            "asl": "bdifieldop.asl"
+        }
+   ]
+  }

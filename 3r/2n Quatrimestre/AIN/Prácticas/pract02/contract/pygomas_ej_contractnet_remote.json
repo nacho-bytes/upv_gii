@@ -1,0 +1,22 @@
+{
+    "host": "gtirouter.dsic.upv.es",
+    "manager": "m_yourlogin",
+    "manager_password": "secret",
+    "service": "s_yourlogin",
+    "service_password": "secret",
+     "allied": [
+        {
+            "rank": "BDISoldier",
+            "name": "vlc_allied2_yourlogin",
+            "password": "secret",
+            "asl": "bdiiniciador.asl"
+        },
+        {
+            "rank": "BDIMedic",
+            "name": "vlc_medic_allied_yourlogin",
+            "password": "secret",
+             "amount": 4,
+            "asl": "bdimedic.asl"
+        }
+   ]
+  }

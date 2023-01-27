@@ -1,0 +1,41 @@
+{
+    "host": "gtirouter.dsic.upv.es",
+    "manager": "manager_mylogin",
+    "service": "service_mylogin",
+    "axis": [
+        {
+            "rank": "BDISoldier",
+            "name": "soldier_axis333",
+            "password": "secret"
+        },
+        {
+            "rank": "BDIMedic",
+            "name": "medic_axis333",
+            "password": "secret",
+			"amount": 2
+        },
+        {
+            "rank": "BDIFieldOp",
+            "name": "fieldops_axis333",
+            "password": "secret"
+        }
+    ],
+    "allied": [
+        {
+            "rank": "BDISoldier",
+            "name": "soldier_allied333",
+            "password": "secret"
+        },
+        {
+            "rank": "BDIMedic",
+            "name": "medic_allied333",
+            "password": "secret",
+            "amount": 2
+        },
+        {
+            "rank": "BDIFieldOp",
+            "name": "fieldops_allied333",
+            "password": "secret"
+        }
+    ]
+}

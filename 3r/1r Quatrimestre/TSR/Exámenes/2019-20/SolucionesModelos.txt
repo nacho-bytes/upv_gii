@@ -1,0 +1,37 @@
+En la siguiente tabla aparecen las respuestas correctas según el modelo de
+examen. El símbolo # en una pregunta indica que dicha pregunta ha sido anulada
+
+preg| solA   solB   solC   solD
+----| ---------------------------
+1   |  ..c.   ..c.   a...   a...
+2   | #a...   ..c.   .b..   .b..
+3   |  ..c.   ..c.   a...   ...d
+4   |  .b..   .b..   ...d   ...d
+5   |  ..c.  #.b..   ..c.   a...
+6   |  a...  #...d  #a...   .b..
+7   |  ..c.   ..c.   a...   ...d
+8   | #...d   ..c.   a...   .b..
+9   |  ..c.   ...d   a...   ..c.
+10  |  .b..  #...d   ..c.   ..c.
+11  |  ..c.   ...d   ...d   ...d
+12  |  .b..  #...d   ..c.   .b..
+13  |  ...d   .b..  #.b..  #..c.
+14  |  a...  #..c.   ..c.   a...
+15  |  .b..   ...d   .b..   ..c.
+16  |  a...   .b..   ..c.   ..c.
+17  |  ..c.   a...  #a...  #a...
+18  | #...d   ...d  #a...   .b..
+19  | #.b..  #.b..  #.b..  #a...
+20  |  a...   .b..  #.b..  #...d
+21  |  ..c.   .b..   ...d  #...d
+22  |  ...d   ...d   a...   .b..
+23  | #...d   .b..   ...d   ..c.
+24  | #a...  #..c.   ..c.  #...d
+25  |  ..c.   a...   ...d  #.b..
+26  |  .b..   a...  #..c.   .b..
+27  | #a...   ...d   a...   ..c.
+28  |  ...d   .b..   ...d   ..c.
+29  |  ..c.  #...d   ..c.   ...d
+30  |  a...   ..c.   ..c.   ..c.
+31  | #..c.   .b..   ..c.  #...d
+32  |  a...   ...d  #...d   a...

@@ -1,0 +1,13 @@
+{
+    "host": "gtirouter.dsic.upv.es",
+    "manager": "ccc3_m",
+    "service": "ccc3_s",
+    "axis": [
+        {
+            "rank": "BDISoldier",
+            "name": "Nacho_TheDestroyer",
+            "password": "secret",
+			"amount": 1
+        }
+    ]
+}

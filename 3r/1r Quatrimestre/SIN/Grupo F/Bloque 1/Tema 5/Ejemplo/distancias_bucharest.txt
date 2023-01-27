@@ -1,0 +1,22 @@
+h(n): Distancias en línea recta de una ciudad n a Bucharest:
+
+Bucharest   0
+  Giurgiu  77
+ Urzicemi  80
+  Pitesti 100
+  Hirsova 151
+  Craiova 160   
+   Eforie 161
+  Fagaras 176
+  Rimmicu 193
+   Vaslui 199
+     Lasi 226
+    Neamt 234
+  Mehadia 241
+  Dobreta 242  
+    Lugoj 244
+    Sibiu 253
+Timisoara 329
+     Arad 366 
+   Zerind 374
+   Oradea 380

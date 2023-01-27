@@ -1,0 +1,31 @@
+####################
+#       INFO       #
+####################
+filename: 'pract02/spam.txt'
+
+####################
+#     BIGRAMS      #
+####################
+$	=>	11	=>	spam:5 egg:5 lobster:1
+a	=>	2	=>	mornay:1 fried:1
+and	=>	12	=>	spam:9 bacon:2 a:1
+aux	=>	1	=>	crevettes:1
+bacon	=>	6	=>	sausage:2 and:2 $:2
+baked	=>	1	=>	beans:1
+beans	=>	1	=>	spam:1
+brandy	=>	1	=>	and:1
+crevettes	=>	1	=>	with:1
+egg	=>	9	=>	and:3 sausage:2 bacon:2 spam:1 on:1
+fried	=>	1	=>	egg:1
+garnished	=>	1	=>	with:1
+lobster	=>	1	=>	thermidor:1
+mornay	=>	1	=>	sauce:1
+on	=>	1	=>	top:1
+pate	=>	1	=>	brandy:1
+sauce	=>	1	=>	garnished:1
+sausage	=>	4	=>	and:4
+spam	=>	27	=>	spam:11 $:9 egg:3 bacon:2 baked:1 and:1
+thermidor	=>	1	=>	aux:1
+top	=>	1	=>	and:1
+truffle	=>	1	=>	pate:1
+with	=>	2	=>	truffle:1 a:1

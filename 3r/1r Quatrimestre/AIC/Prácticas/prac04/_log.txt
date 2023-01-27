@@ -1,0 +1,107 @@
+Ciclo: 19, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 20, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 33, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 34, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 34, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 34, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 35, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 48, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 49, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 62, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 63, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 63, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 63, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 64, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 77, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 78, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 91, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 92, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 92, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 92, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 93, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 106, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 107, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 120, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 121, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 121, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 121, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 122, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 135, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 136, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 149, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 150, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 150, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 150, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 151, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 164, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 165, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 178, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 179, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 179, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 179, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 180, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 193, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 194, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 207, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 208, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 208, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 208, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 209, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 222, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 223, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 236, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 237, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 237, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 237, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 238, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 251, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 252, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 265, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 266, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 266, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 266, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 267, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 280, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 281, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 294, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 295, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 295, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 295, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 296, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 309, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 310, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 323, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 324, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 324, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 324, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 325, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 338, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 339, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 352, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 353, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 353, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 353, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 354, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 367, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 368, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 381, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 382, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 382, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 382, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 383, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 396, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 397, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 410, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 411, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 411, Señal: IFnop; Instrucción dsub r5,r4,r1
+Ciclo: 411, Señal: Salto Efectivo; Instrucción bnez r5,loop
+Ciclo: 412, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 425, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F10
+Ciclo: 426, Señal: Estructural_WB IDstall, IFstall; Instrucción add.d f4,f2,f4, Reg F14
+Ciclo: 439, Señal: BXX IDstall, IFstall; Rdst de dsub r5,r4,r1 (en EX) == Rfte de bnez r5,loop (en ID)
+Ciclo: 440, Señal: corto MEMaIDcomp_s; Rdst de dsub r5,r4,r1 (en MEM) == Rfte de bnez r5,loop (en ID)
+Ciclo: 441, Señal: corto WBaEXcomp_s; Rdst de dsub r5,r4,r1 (en WB) == Rfte de bnez r5,loop (en EX)
+Ciclo: 441, Señal: IFstall; Instrucción trap 0
+Ciclo: 442, Señal: IFstall; Instrucción trap 0
+Ciclo: 443, Señal: IFstall; Instrucción trap 0
+Ciclo: 444, Señal: IFstall; Instrucción trap 0

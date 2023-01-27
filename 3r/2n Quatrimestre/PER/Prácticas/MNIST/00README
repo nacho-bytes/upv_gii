@@ -1,0 +1,22 @@
+MNIST task by Yann Lecun
+------------------------
+Handwritten digits (10 classes) as 256-level gray-scale images of 28 x 28 pixels. 
+Training set includes 60K images and test set, 10K images.
+Samples are organised by rows both, image and label files.
+Corpus web: http://yann.lecun.com/exdb/mnist/
+
+Variable  Set  Type   File  
+--------  ---- ------ ----
+X         tr   images train-images-idx3-ubyte.npz 
+xl        tr   labels train-labels-idx1-ubyte.npz
+Y         test images t10k-images-idx3-ubyte.npz
+yl        test labels t10k-labels-idx1-ubyte.npz
+
+Download and data conversion into text
+--------------------------------------
+./00-preprocess.sh
+
+Converting from text into binary compressed numpy format
+--------------------------------------------------------
+./01-nptxt2bin.py
+

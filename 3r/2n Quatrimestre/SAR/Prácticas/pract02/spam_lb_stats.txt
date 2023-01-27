@@ -1,0 +1,173 @@
+Lines: 11
+Number words (including stopwords): 99
+Vocabulary size: 23
+Number of symbols 346
+Number of different symbols: 24
+Words (alphabetical order):
+	$ : 22
+	a : 2
+	and : 12
+	aux : 1
+	bacon : 6
+	baked : 1
+	beans : 1
+	brandy : 1
+	crevettes : 1
+	egg : 9
+	fried : 1
+	garnished : 1
+	lobster : 1
+	mornay : 1
+	on : 1
+	pate : 1
+	sauce : 1
+	sausage : 4
+	spam : 27
+	thermidor : 1
+Words (by frequency order):
+	spam : 27
+	$ : 22
+	and : 12
+	egg : 9
+	bacon : 6
+	sausage : 4
+	a : 2
+	with : 2
+	aux : 1
+	baked : 1
+	beans : 1
+	brandy : 1
+	crevettes : 1
+	fried : 1
+	garnished : 1
+	lobster : 1
+	mornay : 1
+	on : 1
+	pate : 1
+	sauce : 1
+Symbols (alphabetical order):
+	$ : 22
+	a : 63
+	b : 10
+	c : 8
+	d : 17
+	e : 25
+	f : 3
+	g : 23
+	h : 4
+	i : 5
+	k : 1
+	l : 2
+	m : 29
+	n : 23
+	o : 11
+	p : 29
+	r : 9
+	s : 40
+	t : 9
+	u : 7
+Symbols (by frequency order):
+	a : 63
+	s : 40
+	m : 29
+	p : 29
+	e : 25
+	g : 23
+	n : 23
+	$ : 22
+	d : 17
+	o : 11
+	b : 10
+	r : 9
+	t : 9
+	c : 8
+	u : 7
+	i : 5
+	h : 4
+	f : 3
+	l : 2
+	w : 2
+Words pairs (alphabetical order):
+	$ egg : 5
+	$ lobster : 1
+	$ spam : 5
+	a fried : 1
+	a mornay : 1
+	and a : 1
+	and bacon : 2
+	and spam : 9
+	aux crevettes : 1
+	bacon $ : 2
+	bacon and : 2
+	bacon sausage : 2
+	baked beans : 1
+	beans spam : 1
+	brandy and : 1
+	crevettes with : 1
+	egg and : 3
+	egg bacon : 2
+	egg on : 1
+	egg sausage : 2
+Words pairs (by frequency order):
+	spam spam : 11
+	and spam : 9
+	spam $ : 9
+	$ egg : 5
+	$ spam : 5
+	sausage and : 4
+	egg and : 3
+	spam egg : 3
+	and bacon : 2
+	bacon $ : 2
+	bacon and : 2
+	bacon sausage : 2
+	egg bacon : 2
+	egg sausage : 2
+	spam bacon : 2
+	$ lobster : 1
+	a fried : 1
+	a mornay : 1
+	and a : 1
+	aux crevettes : 1
+Symbols pairs (alphabetical order):
+	ac : 6
+	ag : 4
+	ak : 1
+	am : 27
+	an : 14
+	ar : 1
+	at : 1
+	au : 6
+	ay : 1
+	ba : 7
+	be : 1
+	br : 1
+	bs : 1
+	ce : 1
+	co : 6
+	cr : 1
+	do : 1
+	dy : 1
+	ea : 1
+	ed : 3
+Symbols pairs (by frequency order):
+	pa : 28
+	am : 27
+	sp : 27
+	an : 14
+	nd : 13
+	eg : 9
+	gg : 9
+	sa : 9
+	ba : 7
+	on : 7
+	ac : 6
+	au : 6
+	co : 6
+	ag : 4
+	ge : 4
+	us : 4
+	ed : 3
+	te : 3
+	th : 3
+	er : 2

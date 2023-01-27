@@ -1,0 +1,21 @@
+{
+    "host": "gtirouter.dsic.upv.es",
+    "manager": "manager_mylogin",
+    "service": "service_mylogin",
+    "axis": [
+        {
+            "rank": "BDISoldier",
+            "name": "medic_axis_mylogin",
+            "password": "secret",
+			"amount": 3
+        }
+    ],
+    "allied": [
+        {
+            "rank": "BDISoldier",
+            "name": "soldier_allied_mylogin",
+            "password": "secret",
+            "amount": 3
+        }
+    ]
+}

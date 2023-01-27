@@ -1,0 +1,10 @@
+Temps sequencial: 
+
+Temps paral·lel:
+            Versió 1    Versió 2
+  2 fils    
+  8 fils    
+ 32 fils    
+
+1.- #pragma omp parallel for reduction(+:tot) a radiXfiles i radiXcolumnes
+2. 

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<title>Final:datos1.s. Ciclo 8</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<style>
+html, body {
+    font-family:"Courier", Times, serif;
+    font-size:10pt;
+    line-height:100%;
+}
+</style>
+</head>
+<body>
+
+<!-- Barra de navegacion CSS -->
+<div class="w3-bar w3-top w3-light-grey">
+<a class="w3-bar-item w3-button w3-hover-grey" href="index.html">INICIO</a>
+<a class="w3-bar-item w3-button" href="final.html">FINAL</a>
+<a class="w3-bar-item w3-button" href="result001.html">Estado</a>
+</div>
+
+<br><br><br>
+<div class="w3-row w3-container">
+<table>
+<tr>
+<td colspan="5" bgcolor="#ccddff" align="center">Resultados</td>
+</tr>
+<tr bgcolor="#ccddff">
+  <td>Ciclos&nbsp;&nbsp;</td>
+  <td>Instrucciones&nbsp;&nbsp;</td>
+  <td>CPI&nbsp;&nbsp;</td>
+  <td>Op. CF&nbsp;&nbsp;</td>
+  <td>Op. CF/Ciclo&nbsp;&nbsp;</td>
+</tr>
+<tr bgcolor="#ddeeff">
+  <td>8</td>
+  <td>4</td>
+  <td>2.00</td>
+  <td>0</td>
+  <td>0.00</td>
+</tr>
+</table><br>
+</div>
+
+<div class="w3-row w3-container">
+<!-- Configuración -->
+<table>
+<tr>
+  <td colspan="2" bgcolor="#ccddff" align="center">Configuración</td>
+</tr>
+<tr>
+  <td bgcolor="#ccddff" align="center">Parámetro</td>
+  <td bgcolor="#ddeeff" align="center">Valor</td>
+</tr>
+<tr>
+  <td bgcolor="#eeeeee">Programa</td>
+  <td bgcolor="#dddddd" align="center">datos1.s</td>
+</tr>
+<tr>
+  <td bgcolor="#eeeeee">Riesgos de datos</td>
+  <td bgcolor="#dddddd" align="center">Forwarding</td>
+</tr>
+<tr>
+  <td bgcolor="#eeeeee">Riesgos de control&nbsp;&nbsp;</td>
+  <td bgcolor="#dddddd" align="center">Stalls (Lat=3)</td>
+</tr>
+
+<tr>
+  <td bgcolor="#eeeeee">Registros</td>
+  <td bgcolor="#dddddd" align="center">32</td>
+</tr>
+
+<tr>
+  <td bgcolor="#eeeeee">Lat. L/S&nbsp;&nbsp;</td>
+  <td bgcolor="#dddddd" align="center">2</td>
+</tr>
+<tr>
+  <td bgcolor="#eeeeee">Lat. FP ADD&nbsp;&nbsp;</td>
+  <td bgcolor="#dddddd" align="center">4</td>
+</tr>
+<tr>
+  <td bgcolor="#eeeeee">Lat. FP CMP&nbsp;&nbsp;</td>
+  <td bgcolor="#dddddd" align="center">4</td>
+</tr>
+<tr>
+  <td bgcolor="#eeeeee">Lat. FP MUL&nbsp;&nbsp;</td>
+  <td bgcolor="#dddddd" align="center">7</td>
+</tr>
+
+</table>
+
+<br>
+</div>
+
+<div class="w3-row w3-container">
+<div class="w3-container w3-cell">
+<!-- Registros enteros en columna -->
+<table>
+<tr bgcolor="#ccddff">
+  <td align="center" colspan=2>Registros int</td>
+</tr>
+<tr>
+  <td bgcolor="#ccddff" align="center">Registro</td>
+  <td width=60 bgcolor="#ddeeff" align="center">Valor</td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R0&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R1&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">10</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R2&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">20</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R3&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd">30</td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R4&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd">25</td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R5&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd">35</td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R6&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R7&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R8&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R9&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R10&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R11&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R12&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R13&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R14&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R15&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R16&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R17&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R18&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R19&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R20&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R21&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R22&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R23&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R24&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R25&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R26&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R27&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R28&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R29&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R30&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">R31&nbsp;&nbsp;</td>
+<td align="center" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</tr>
+</table>
+
+</div>
+
+<div class="w3-container w3-cell">
+<!-- Registros fp en columna -->
+<table>
+<tr bgcolor="#ccddff">
+  <td align="center" colspan=3>Registros fp</td>
+</tr>
+<tr>
+  <td bgcolor="#ccddff" align="center">Registro</td>
+  <td width=60 bgcolor="#ddeeff" align="center">Hi</td>
+  <td width=60 bgcolor="#ddeeff" align="center">Lo</td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F0&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F1&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F2&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F3&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F4&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F5&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F6&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F7&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F8&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F9&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F10&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F11&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F12&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F13&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F14&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F15&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F16&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F17&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F18&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F19&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F20&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F21&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F22&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F23&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F24&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F25&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F26&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F27&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F28&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F29&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F30&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">F31&nbsp;&nbsp;</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">   0.0</span></td>
+</tr>
+  <td align="center" bgcolor="#eeeeee">FPSR</td>
+<td align="center" colspan="2" bgcolor="#dddddd"><span style="color: darkgray;">0</span></td>
+
+</table>
+
+</div>
+
+<div class="w3-container w3-cell">
+<table>
+ <tr bgcolor="#ccddff">
+  <td align="center" colspan=5>Memoria de Datos</td>
+</tr>
+<tr>
+  <td bgcolor="#ccddff" align="center">Dirección</td>
+  <td bgcolor="#ddeeff" width="50" align="center">+0</td>
+  <td bgcolor="#ddeeff" width="50" align="center">+1</td>
+  <td bgcolor="#ddeeff" width="50" align="center">+2</td>
+  <td bgcolor="#ddeeff" width="50" align="center">+3</td>
+ </tr>
+</table>
+
+</div>
+
+<div class="w3-container w3-cell">
+<!-- Mem Instr en columna -->
+<table>
+<tr bgcolor="#ccddff">
+  <td align="center" colspan=2>Memoria de Instrucciones</td>
+</tr>
+<tr>
+  <td bgcolor="#ccddff" align="center">Dirección</td>
+  <td width=190 bgcolor="#ddeeff" align="center">Instrucciones</td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">.text&nbsp;&nbsp;</td>
+  <td bgcolor="#dddddd"><font color="darkred">dadd r3,r1,r2</font></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">4&nbsp;&nbsp;</td>
+  <td bgcolor="#dddddd"><font color="darkcyan">dsub r4,r3,#5</font></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">8&nbsp;&nbsp;</td>
+  <td bgcolor="#dddddd"><font color="limegreen">dadd r5,r3,#5</font></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">12&nbsp;&nbsp;</td>
+  <td bgcolor="#dddddd"><font color="orange">trap 0</font></td>
+</tr>
+<tr>
+  <td align="right" bgcolor="#eeeeee">.etext&nbsp;&nbsp;</td>
+  <td bgcolor="#dddddd"><font color="deeppink">nop</font></td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+<br>
+<div class="w3-raw w3-container w3-black w3-text-green">
+<br>
+CONSOLA:
+<br>
+<br>
+</div>
+
+<br>
+<!-- Final -->
+<div class="w3-row w3-container w3-light-grey">
+<address>
+Arquitectura e Ingeniería de Computadores<br>
+Departamento de Informática de Sistemas y Computadores (DISCA)<br>
+Universitat Politècnica de València<br>
+</address>
+</div>
+
+</body>
+</html>

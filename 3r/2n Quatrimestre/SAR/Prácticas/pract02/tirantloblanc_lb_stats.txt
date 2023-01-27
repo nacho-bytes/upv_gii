@@ -1,0 +1,173 @@
+Lines: 18695
+Number words (including stopwords): 204632
+Vocabulary size: 6551
+Number of symbols 686860
+Number of different symbols: 36
+Words (alphabetical order):
+	0 : 1
+	00 : 1
+	000 : 1
+	01 : 1
+	02 : 1
+	03 : 1
+	04 : 1
+	05 : 1
+	1 : 49
+	10 : 2
+	10000 : 2
+	10234 : 2
+	103 : 1
+	11 : 2
+	12 : 2
+	13th : 1
+	1413 : 1
+	1438 : 1
+	1439 : 1
+	1460 : 1
+Words (by frequency order):
+	the : 11544
+	and : 7636
+	to : 5525
+	of : 3694
+	he : 3164
+	that : 2709
+	i : 2258
+	you : 2254
+	in : 2228
+	a : 2220
+	they : 2133
+	tirant : 1874
+	was : 1869
+	his : 1687
+	had : 1669
+	him : 1562
+	with : 1534
+	it : 1321
+	her : 1275
+	for : 1253
+Symbols (alphabetical order):
+	0 : 65
+	1 : 133
+	2 : 40
+	3 : 38
+	4 : 38
+	5 : 30
+	6 : 25
+	7 : 31
+	8 : 29
+	9 : 61
+	a : 56650
+	b : 8952
+	c : 14789
+	d : 33791
+	e : 88035
+	f : 12573
+	g : 13819
+	h : 50500
+	i : 44162
+	j : 771
+Symbols (by frequency order):
+	e : 88035
+	t : 66371
+	a : 56650
+	h : 50500
+	o : 50270
+	n : 46811
+	i : 44162
+	r : 38995
+	s : 38912
+	d : 33791
+	l : 26167
+	m : 17981
+	u : 17866
+	w : 17390
+	y : 15737
+	c : 14789
+	g : 13819
+	f : 12573
+	p : 11230
+	b : 8952
+Words pairs (alphabetical order):
+	$ 1 : 24
+	$ 10 : 1
+	$ 11 : 1
+	$ 12 : 1
+	$ 1512 : 1
+	$ 2 : 1
+	$ 3 : 1
+	$ 4 : 1
+	$ 5 : 1
+	$ 501 : 1
+	$ 6 : 1
+	$ 7 : 1
+	$ 8 : 1
+	$ 809 : 1
+	$ 9 : 1
+	$ 98 : 1
+	$ a : 69
+	$ abandoned : 2
+	$ able : 6
+	$ aboard : 1
+Words pairs (by frequency order):
+	the $ : 1099
+	$ the : 1098
+	to the : 874
+	of the : 799
+	the king : 654
+	and the : 633
+	the emperor : 616
+	and $ : 611
+	in the : 600
+	$ and : 556
+	all the : 526
+	the princess : 513
+	and he : 494
+	to $ : 438
+	said $ : 414
+	$ when : 409
+	when the : 359
+	and they : 344
+	$ tirant : 339
+	that he : 325
+Symbols pairs (alphabetical order):
+	00 : 15
+	01 : 6
+	02 : 3
+	03 : 5
+	04 : 2
+	05 : 1
+	06 : 1
+	08 : 1
+	09 : 1
+	0t : 3
+	10 : 7
+	11 : 6
+	12 : 6
+	13 : 2
+	14 : 11
+	15 : 10
+	16 : 3
+	17 : 3
+	18 : 3
+	19 : 19
+Symbols pairs (by frequency order):
+	he : 26375
+	th : 25186
+	an : 15309
+	er : 11292
+	in : 11060
+	nd : 10199
+	ou : 8842
+	re : 8548
+	ha : 7942
+	to : 7494
+	en : 7390
+	or : 6985
+	at : 6786
+	hi : 6563
+	ed : 6527
+	nt : 5791
+	on : 5704
+	ng : 5590
+	is : 5309
+	ve : 5072

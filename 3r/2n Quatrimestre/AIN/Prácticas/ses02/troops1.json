@@ -1,0 +1,41 @@
+{
+    "host": "gtirouter.dsic.upv.es",
+    "manager": "idielam_m",
+    "service": "idielam_s",
+    "allied": [
+        {
+            "rank": "BDISoldier",
+            "name": "Nacho_All_Sol",
+            "password": "secret"
+        },
+        {
+            "rank": "BDIMedic",
+            "name": "Nacho_All_Med",
+            "password": "secret",
+            "amount": 2
+        },
+        {
+            "rank": "BDIFieldOp",
+            "name": "Nacho_All_Op",
+            "password": "secret"
+        }
+    ],
+    "axis": [
+        {
+            "rank": "BDISoldier",
+            "name": "Nacho_Axi_Sol",
+            "password": "secret"
+        },
+        {
+            "rank": "BDIMedic",
+            "name": "Nacho_Axi_Med",
+            "password": "secret",
+            "amount": 2
+        },
+        {
+            "rank": "BDIFieldOp",
+            "name": "Nacho_Axi_Op",
+            "password": "secret"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+(deffacts factorial (numero 5) (fact 1))
+(defrule fact
+  ?f1 <- (numero ?n1)
+  ?f2 <- (fact ?n2)
+  (test (> ?n1 1))
+  =>
+  (retract ?f1 ?f2)
+  (assert (numero (- ?n1 1)))
+  (assert (fact (* ?n2 ?n1 ))))
+(set-strategy breadth)
+(watch facts)
+(watch activations)
+(reset)
+(run)
+(exit)

@@ -1,0 +1,8 @@
+Compilar con
+$ gcc shooter_final.c -o final -lGL -lGLU -lglut -lm `pkg-config cwiid --cflags --libs`
+
+ejecutar con 
+$ ./final
+
+
+

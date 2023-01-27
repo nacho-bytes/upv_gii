@@ -1,0 +1,3 @@
+El programa sirve para probar distintos modelos de redes neuronales convolucionales en la webcam. 
+He configurado y preparado 5 modelos para probar pero solo uno de ellos pesa menos de 40 MB. Ese te lo he incluido en el zip de entrega pero el resto los adjunto. 
+Solo tienes que colocar las carpetas de modelos junto al programa detector.py como el otro modelo que ya está preparado.

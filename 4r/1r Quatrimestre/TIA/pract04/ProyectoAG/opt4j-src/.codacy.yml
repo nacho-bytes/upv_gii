@@ -1,0 +1,7 @@
+---
+exclude_paths:
+  - 'opt4j-viewer/src/main/java/ptolemy/**/*'
+  - '**/src/integration-test/**/*'
+  - '**/*.py'
+  - '**/*.js'
+  - '**/*.css'

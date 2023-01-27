@@ -1,0 +1,3 @@
+Si por cualquier motivo, no se pudiese instalar correctamente alguna de las librerias o el programa no funcionase
+correctamente (hemos tenido algunos problemas replicando resultados en distintos ordenadores) hemos subido un
+video a YouTube a modo de demostracion del programa terminado. https://youtu.be/VycK7Fx-Mvk

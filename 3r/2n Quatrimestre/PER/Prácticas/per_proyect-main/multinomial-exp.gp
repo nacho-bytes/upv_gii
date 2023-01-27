@@ -17,8 +17,8 @@ set terminal postscript eps font "Helvetica,24"
 # Nombre del fichero de salida
 #
 
-# set terminal jpeg size 1280,960
-set output "multinomial-exp.eps"
+set terminal jpeg size 1280,960
+set output "multinomial-exp.jpeg"
 
 # Establece que los ejes estén en escala logarítmica para observar más
 # fácilmente valores muy cercanos entre si
@@ -29,7 +29,7 @@ set logscale xy
 # Rangos del eje x y del eje y
 #
 
-set xrange [1e-11:0.5]
+set xrange [0.8e-10:1.2e-1]
 set yrange [15:40]
 
 # Define los puntos de referencia (tics) sobre el eje x y el eje y
@@ -53,8 +53,7 @@ set ytics ("15" 15, "20" 20, "25" 25, "30" 30, "35" 35, "40" 40)
 # de la fuente: font "HelveticaBold,30"
 
 set label "Epsilon" at 1e-1,16 right
-set label "Error (%)" at 1e-11,38 left
-# set label "Original" at 0.92,2.9 left
+set label "Error (%)" at 1e-10,38 left
 set label "MNIST Multinomial" at 1e-5,30 center font "HelveticaBold,30"
 
 # El comando plot representa las dos curvas que aparecen en la

@@ -1,0 +1,43 @@
+
+; Version LPG-td-1.0
+; Seed 79976687
+; Command line: /cygdrive/w/4o INF/TIA/pract02/lpg-td -o .\taxis.pddl -f .\problem_original.pddl -n 10 
+; Problem problem_original.pddl
+; Time 1.88
+; Search time 1.88
+; Parsing time 0.00
+; Mutex time 0.00
+; Quality 22.50
+
+
+Time 1.88
+
+0.0003:   (FAST-CHARGE-BAT TAXI3 C) [4.0000]  
+  (autono-taxi taxi3) 20 -> 70
+4.0005:   (MOVE-TAXI TAXI3 C F) [8.0000] 
+  (at taxi3 C) -> (at taxi3 C)
+  (autono-taxi taxi3) 70 -> 38
+12.0007:   (LOAD-PASS PASS3 TAXI3 F PASS2) [1.0000]
+  (at pass3 F) -> (in pass3 taxi3)
+13.0010:   (MOVE-TAXI TAXI3 F D) [5.0000]
+18.0012:   (UNLOAD-PASS PASS3 TAXI3 D) [1.0000]
+0.0015:   (REVISE-TAXI TAXI1 A) [2.0000]
+2.0017:   (LOAD-PASS PASS1 TAXI1 A PASS2) [1.0000]
+0.0020:   (FAST-CHARGE-BAT TAXI1 A) [4.0000]
+4.0023:   (MOVE-TAXI TAXI1 A C) [3.0000]
+7.0025:   (MOVE-TAXI TAXI1 C F) [8.0000]
+15.0028:   (UNLOAD-PASS PASS1 TAXI1 F) [1.0000]
+0.0030:   (FAST-CHARGE-BAT TAXI4 B) [4.0000]
+0.0033:   (LOAD-PASS PASS2 TAXI4 B PASS5) [1.0000]
+4.0035:   (MOVE-TAXI TAXI4 B E) [6.0000]
+10.0037:   (LOAD-PASS PASS5 TAXI4 E PASS3) [1.0000]
+10.0040:   (UNLOAD-PASS PASS2 TAXI4 E) [1.0000]
+11.0042:   (MOVE-TAXI TAXI4 E B) [6.0000]
+17.0045:   (MOVE-TAXI TAXI4 B A) [2.0000]
+19.0047:   (UNLOAD-PASS PASS5 TAXI4 A) [1.0000]
+0.0050:   (LOAD-PASS PASS4 TAXI5 D PASS3) [1.0000]
+0.0052:   (SLOW-CHARGE-BAT TAXI5 D) [8.0000]
+8.0055:   (MOVE-TAXI TAXI5 D E) [8.0000]
+16.0058:   (UNLOAD-PASS PASS4 TAXI5 E) [1.0000]
+
+

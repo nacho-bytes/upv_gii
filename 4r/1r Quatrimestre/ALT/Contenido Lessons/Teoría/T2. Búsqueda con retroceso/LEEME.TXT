@@ -1,0 +1,29 @@
+Hemos dejado varios ejemplos de problemas resueltos mediante
+backtracking.
+
+El objetivo es mostrar cómo implementar esta estrategia sin necesidad
+de recurrir a las clases de Python. Se puede resolver únicamente con
+funciones. Para simplificar, muchas funciones son no recursivas y
+tienen en su interior otras funciones (clausuras, ver
+https://es.wikipedia.org/wiki/Clausura_%28inform%C3%A1tica%29 )
+auxiliares (entre ellas, la de backtracking que es claramente
+recursiva).
+
+El fichero "pseudo_code_scheme_backtracking.py" contiene pseudo-código
+con el esquema de backtracking sin usar clases Python.
+
+Los problemas vistos en clase son:
+
+ - n-reinas	
+ - suma de subconjuntos
+ - ciclo Hamiltoniano
+
+Otros problemas puestos simplemente para que podáis ver más ejemplos:
+
+ - sudoku
+ - usar fichas de dominó para formar una secuencia (ciclo Euleriano)
+ - ...
+
+Os aconsejamos intentar primero los ejercicios antes de ver la solución.
+
+

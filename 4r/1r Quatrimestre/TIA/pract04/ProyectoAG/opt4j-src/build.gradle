@@ -1,0 +1,233 @@
+apply plugin: 'base'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+apply plugin: 'jacoco'
+
+import org.apache.tools.ant.filters.ReplaceTokens
+
+mainClassName = 'org.opt4j.core.start.Opt4J'
+
+/*
+ * Gets the version name from the latest Git tag
+ */
+def getVersionName = {
+	->
+	def stdout = new ByteArrayOutputStream()
+	exec {
+		commandLine 'git', 'describe', '--tags', '--first-parent'
+		standardOutput = stdout
+		ignoreExitValue true
+	}
+	version=stdout.toString().trim()
+	if (version.count('-') > 1 || version.isEmpty())
+		version += '-SNAPSHOT'
+	if (version.getAt(0) == 'v')
+		version = version.substring(1)
+	return version
+}
+version=getVersionName()
+
+
+ext {
+	dateISO = new Date().format("yyyy-MM-dd")
+}
+
+allprojects {
+	group = 'org.opt4j'
+
+	repositories {
+		mavenCentral()
+	}
+}
+
+def descriptions = [
+	'opt4j-core' : 'The core module of Opt4J',
+	'opt4j-benchmarks' : 'A set of benchmarks for Opt4J',
+	'opt4j-operators' : 'A set of operators for Opt4J',
+	'opt4j-optimizers' : 'A set of optimizers for Opt4J',
+	'opt4j-satdecoding' : 'The SAT decoding module for Opt4J',
+	'opt4j-tutorial' : 'The tutorial classes for Opt4J',
+	'opt4j-viewer' : 'The viewer module for Opt4J'
+]
+
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'maven'
+	apply plugin: 'signing'
+	apply plugin: 'eclipse'
+	apply plugin: 'jacoco'
+
+	version = parent.version
+
+	sourceSets {
+		integrationTest {
+			java {
+				compileClasspath += main.output + main.compileClasspath + test.compileClasspath
+				runtimeClasspath += main.output + main.compileClasspath + test.compileClasspath
+				srcDir file('src/test-integration/java')
+			}
+			resources.srcDir file('src/test-integration/resources')
+		}
+	}
+	task integrationTest(type: Test) {
+		testClassesDirs = sourceSets.integrationTest.output.classesDirs
+		classpath = sourceSets.integrationTest.runtimeClasspath
+	}
+
+	task sourcesJar(type: Jar, dependsOn:classes) {
+		from sourceSets.main.allSource
+		classifier = 'sources'
+	}
+
+	task javadocJar(type: Jar, dependsOn:javadoc) {
+		from javadoc.destinationDir
+		classifier = 'javadoc'
+	}
+
+	jacocoTestReport {
+		getAdditionalSourceDirs().setFrom(sourceSets.main.allSource.srcDirs)
+		getSourceDirectories().setFrom(sourceSets.main.allSource.srcDirs)
+		getClassDirectories().setFrom(sourceSets.main.output)
+		reports {
+			html.enabled = true
+			xml.enabled = true
+			csv.enabled = false
+		}
+	}
+}
+
+dependencies {
+	runtime project(':opt4j-core')
+	runtime project(':opt4j-satdecoding')
+	runtime project(':opt4j-operators')
+	runtime project(':opt4j-optimizers')
+	runtime project(':opt4j-benchmarks')
+	runtime project(':opt4j-viewer')
+	runtime project(':opt4j-tutorial')
+}
+
+jar {
+	manifest {
+		attributes 'Main-Class': mainClassName
+	}
+}
+
+java {
+	withJavadocJar()
+	withSourcesJar()
+}
+
+artifacts {
+	archives sourcesJar
+    archives javadocJar
+}
+
+/* for now ignore all javadoc errors in case of Java 8 */
+if (JavaVersion.current().isJava8Compatible()) {
+	allprojects {
+		tasks.withType(Javadoc) {
+			options.addStringOption('Xdoclint:none', '-quiet')
+		}
+	}
+}
+
+task copyWebsite(type: Copy){
+	from('src/main/website/') {
+		include '**/*.html'
+		filter(ReplaceTokens, tokens: [version : project.version, date : project.dateISO])
+	}
+	from('src/main/website/') {
+		exclude '**/*.html'
+	}
+	into 'build/website/'
+}
+
+task copyJavadoc(type: Copy, dependsOn: 'alldocs'){
+	from new File(project.buildDir, 'docs/javadoc')
+	into 'build/website/javadoc/'+version
+}
+
+task copyTutorial(type: Copy, dependsOn: ":opt4j-tutorial:tutorial"){
+	from new File(project(':opt4j-tutorial').buildDir,'tutorial')
+	into 'build/website/documentation/'+version
+}
+
+task website(dependsOn: [copyWebsite, copyJavadoc, copyTutorial]) {
+	description = 'build the website to deploy it when releasing'
+	group = 'distribution'
+}
+
+
+
+task alldocs(type: Javadoc) {
+	title = "Opt4J version $version Project API Documentation"
+	destinationDir = new File(project.buildDir, 'docs/javadoc')
+	options.memberLevel = org.gradle.external.javadoc.JavadocMemberLevel.PUBLIC
+	options.links 'https://docs.oracle.com/en/java/javase/12/docs/api/','http://google.github.io/guice/api-docs/4.1/javadoc/'
+	options.linkSource = true
+	subprojects.each {subproject ->
+		source subproject.sourceSets.main.java
+	}
+	exclude 'ptolemy/**'
+	subprojects.each { subproject ->
+		if( classpath ) {
+			classpath += subproject.sourceSets.main.output + subproject.sourceSets.main.compileClasspath
+		} else {
+			classpath = subproject.sourceSets.main.output + subproject.sourceSets.main.compileClasspath
+		}
+	}
+}
+
+import org.apache.tools.ant.filters.ReplaceTokens
+applicationDistribution.from("src/distribution") {
+    filter(ReplaceTokens, tokens: [version : project.version, date : project.dateISO])
+}
+
+task fatjar(dependsOn: subprojects.jar, type: Jar) {
+	destinationDir = new File(project.buildDir, 'fatjar')
+	from {
+		configurations.runtime.collect {
+			it.isDirectory() ? it : zipTree(it)
+		}
+	}
+	manifest {
+		attributes 'Main-Class': mainClassName
+		attributes 'SplashScreen-Image': 'img/splash.png'
+	}
+}
+
+
+applicationDefaultJvmArgs = [
+	"-splash:opt4j-core/src/main/resources/img/splash.png"
+]
+
+task jacocoRootReport(type: org.gradle.testing.jacoco.tasks.JacocoReport) {
+	dependsOn = subprojects.test
+	getAdditionalSourceDirs().setFrom(subprojects.sourceSets.main.allSource.srcDirs)
+	getSourceDirectories().setFrom(subprojects.sourceSets.main.allSource.srcDirs)
+	getClassDirectories().setFrom(subprojects.sourceSets.main.output)
+	getExecutionData().setFrom(subprojects.jacocoTestReport.executionData)	
+	getExecutionData().setFrom(executionData.findAll {
+			it.exists()
+		})
+	reports {
+		html.enabled true
+		html.destination(file("${buildDir}/reports/jacoco"))
+		xml.enabled = true
+		xml.destination(file("${buildDir}/reports/jacoco/rootReport.xml"))
+		csv.enabled = false
+	}
+	onlyIf = {
+		true
+	}
+	afterEvaluate {
+		getClassDirectories().setFrom(classDirectories.files.collect {
+			fileTree(dir: it, exclude: [
+				'ptolemy/**',
+				'org/opt4j/tutorial/**',
+				'org/opt4j/viewer/**',
+				'org/opt4j/core/config/visualization/**'
+			])
+		})
+	}
+}

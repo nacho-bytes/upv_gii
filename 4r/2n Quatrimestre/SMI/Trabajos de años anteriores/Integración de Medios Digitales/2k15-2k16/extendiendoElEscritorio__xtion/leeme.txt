@@ -1,0 +1,15 @@
+Hector Javier Orts Salvador
+
+Jaume Masia Izquierdo
+
+
+
+Tras descomprimir modificar el fichero "gesture_event" descomentando la linea ONE_HAND_MODE     MOUSE_MODE y dejando comentada la linea
+
+ ONE_HAND_MODE      KEYBOARD_MODE. Quedando así:
+
+ ONE_HAND_MODE     MOUSE_MODE
+
+ #ONE_HAND_MODE      KEYBOARD_MODE
+
+De esta manera se accede al modo de Raton al usar una mano.

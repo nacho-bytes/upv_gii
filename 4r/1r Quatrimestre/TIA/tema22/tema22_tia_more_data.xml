@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BIF VERSION="0.3"  xmlns="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3 http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3/XMLBIFv0_3.xsd">
+<NETWORK>
+<NAME>Untitled</NAME>
+<PROPERTY>detailed = </PROPERTY>
+<PROPERTY>short = </PROPERTY>
+
+<VARIABLE TYPE="nature">
+	<NAME>Huellas</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7536.13232421875, 5057.21435546875)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Motivo</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7532.58203125, 5166.42822265625)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>No-coartada</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7544.86767578125, 5332.7861328125)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Culpable</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7862.20361328125, 5158.42822265625)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Guantes</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7249.0, 5064.0)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Conocer</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7249.0, 5166.0)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Ubicación</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7257.0, 5373.0)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Visto</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7260.0, 5267.0)</PROPERTY>
+</VARIABLE>
+
+<DEFINITION>
+	<FOR>Huellas</FOR>
+	<GIVEN>Guantes</GIVEN>
+	<TABLE>0.2 0.8 0.9 0.1</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Motivo</FOR>
+	<GIVEN>Conocer</GIVEN>
+	<TABLE>0.8 0.2 0.2 0.8</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>No-coartada</FOR>
+	<GIVEN>Ubicación</GIVEN>
+	<GIVEN>Visto</GIVEN>
+	<TABLE>0.9 0.1 0.7 0.3 0.4 0.6 0.2 0.8</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Culpable</FOR>
+	<GIVEN>Huellas</GIVEN>
+	<GIVEN>Motivo</GIVEN>
+	<GIVEN>No-coartada</GIVEN>
+	<TABLE>0.9 0.1 0.7 0.3 0.5 0.5 0.3 0.7 0.8 0.2 0.8 0.2 0.5 0.5 0.001 0.999</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Guantes</FOR>
+	<TABLE>0.7 0.3</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Conocer</FOR>
+	<TABLE>0.7 0.3</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Ubicación</FOR>
+	<TABLE>0.7 0.3</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Visto</FOR>
+	<TABLE>0.3 0.7</TABLE>
+</DEFINITION>
+</NETWORK>
+</BIF>

@@ -1,0 +1,2 @@
+En esta carpeta hemos dejado una versión electrónica del libro de apuntes que se empleó en una asignatura similar a "Lenguajes de Programación y Procesadores de Lenguajes".
+El contenido de estos apuntes NO es el mismo que el de la asignatura actual y no ha sido revisado. Lo dejamos disponible porque consideramos que puede ser de ayuda a algún alumno.

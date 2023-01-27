@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BIF VERSION="0.3"  xmlns="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3 http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3/XMLBIFv0_3.xsd">
+<NETWORK>
+<NAME>Untitled</NAME>
+<PROPERTY>detailed = </PROPERTY>
+<PROPERTY>short = </PROPERTY>
+
+<VARIABLE TYPE="nature">
+	<NAME>Huellas</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7270.64794921875, 5131.46337890625)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Motivo</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7269.89306640625, 5234.92919921875)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>No-coartada</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7271.21240234375, 5341.5361328125)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Culpable</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7489.78759765625, 5234.5751953125)</PROPERTY>
+</VARIABLE>
+
+<DEFINITION>
+	<FOR>Huellas</FOR>
+	<TABLE>0.9 0.1</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Motivo</FOR>
+	<TABLE>0.5 0.5</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>No-coartada</FOR>
+	<TABLE>0.3 0.7</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Culpable</FOR>
+	<GIVEN>Huellas</GIVEN>
+	<GIVEN>Motivo</GIVEN>
+	<GIVEN>No-coartada</GIVEN>
+	<TABLE>0.9 0.1 0.7 0.3 0.5 0.5 0.3 0.7 0.8 0.2 0.8 0.2 0.5 0.5 0.001 0.999</TABLE>
+</DEFINITION>
+</NETWORK>
+</BIF>

@@ -1,0 +1,44 @@
+<!--
+<link href="%C3%8Dndice%20de%20contenidos%20del%20Portafolio%20_IMD,%202k16_2k17__files/tool_base.css" media="all" rel="stylesheet" type="text/css" />
+<link href="%C3%8Dndice%20de%20contenidos%20del%20Portafolio%20_IMD,%202k16_2k17__files/tool.css" media="all" rel="stylesheet" type="text/css" />
+<style type="text/css">body { padding: 5px !important; }
+</style>
+-->
+<h1 style="text-align:center">&Iacute;ndice de realizaciones a incluir en el porfolio<br />
+(SMII, curso 2k21/2k22)</h1>
+
+<p style="text-align:justify">A lo largo del presente curso se va a ir publicando lo que relativo a cada desarrollo pr&aacute;ctico propuesto se va a exigir que sea resuelto y llevada esa soluci&oacute;n al portafolio. Para ello, se sugiere ir generando un apartado en el porfolio que recoja el t&iacute;tulo de la actividad o ejercicio de la pr&aacute;ctica, acompa&ntilde;ado de la explicaci&oacute;n de la soluci&oacute;n obtenida y, al menos una, captura de pantalla (si tiene salida gr&aacute;fica) del resultado obtenido.</p>
+
+<p style="text-align:justify">Aprovecho para recordar que la entrega del&nbsp; porfolio se materializa en la contestaci&oacute;n a la tarea correspondiente en forma de:</p>
+
+<ul>
+	<li style="text-align: justify;">Documentaci&oacute;n (en el formato nativo en que la redact&eacute;is + PDF).</li>
+	<li style="text-align: justify;">C&oacute;digo o proyecto asociado que se referencia en la soluci&oacute;n explicada de cada apartado. Este podr&iacute;a ser un solo fichero, pero por limitaciones del tama&ntilde;o de los adjuntos en PoliformaT puede ser necesario hacer varios. Por ello, no se incluir&aacute; el ejecutable final y se habr&aacute; de explicar <strong>siempre</strong> en cual hay que buscar el c&oacute;digo y <strong>c&oacute;mo se recompila</strong> ( bien sea a base de la l&iacute;nea de &oacute;rdenes a ejecutar o bien que existe un fichero <em>Makefile</em> para esa tarea) para reconstruir el ejecutable.</li>
+</ul>
+
+<p style="text-align:justify">Pod&eacute;is utilizar el espacio en el servidor de la asignatura (<em>web-sisop.disca.upv.es)</em> para dejar copia de vuestras realizaciones mientras avanza el curso. El acceso a ese servidor se hace con las cuentas que utilizamos en las pr&aacute;cticas y se puede acceder desde fuera del laboratorio con una aplicaci&oacute;n que permita una conexi&oacute;n segura SSH/SFTP (scp, FileZilla, MobaXTerm, ...).</p>
+
+<p style="text-align:justify">Aqu&iacute; se va a ir publicando, <u>conforme avanza el curso</u>, qu&eacute; ejercicio o actividad debe incluirse en el portafolio; para que sirva de &iacute;ndice y recordatorio al alumno. La lista de actividades es:</p>
+
+<ul>
+	<li style="text-align: justify;">De la pr&aacute;ctica 1, apartado &quot;4 Trabajo aut&oacute;nomo&quot;.
+	<ul>
+		<li style="text-align: justify;">De esta pr&aacute;ctica se habr&aacute;n entregado ya (en la tarea de &quot;<a href="https://poliformat.upv.es/portal/site/GRA_11629_2021/tool/51c8d97d-2691-4921-b4f6-1d0c9cfba2cd?assignmentId=/assignment/a/GRA_11629_2021/b51216be-fc5f-4fba-9ac8-f7ed37e456f0&amp;panel=Main&amp;sakai_action=doView_assignment" title="Instalación de los SDK básicos para el desarrollo de la asignatura SMII">Instalaci&oacute;n de los SDK b&aacute;sicos para el desarrollo de la asignatura SMII </a>&quot;)&nbsp; las capturas del proceso de instalaci&oacute;n de OpenGL, OpenCV y OpenAL, mostrando la ventana de instalaci&oacute;n o el terminal y alg&uacute;n elemento que permita la identificaci&oacute;n de la m&aacute;quina o del usuario (p. ej. la imagen del usuario a trav&eacute;s de su c&aacute;mara web en una ventana del escritorio). As&iacute; que no es obligado volverlo a incluir en este porfolio.</li>
+		<li style="text-align: justify;"><strong>OpenGL &ldquo;Bouncing Ball&rdquo;</strong>.
+		<p>De forma aut&oacute;noma, modificar el ejemplo de &ldquo;A Bouncing Ball&ldquo; para que tenga la apariencia que se muestra en el bolet&iacute;n, donde ha cambiando el color de la bola y la geometr&iacute;a de la misma para que sea un semic&iacute;rculo.</p>
+		</li>
+		<li style="text-align: justify;">
+		<p>Y la puesta en marcha de los <strong>ejemplos</strong> &quot;<a href="http://www.lighthouse3d.com/tutorials/glut-tutorial/keyboard-example-moving-around-the-world/">Keyboard Example: Moving the Camera</a>&rdquo; y &quot;&nbsp;<a href="https://www.cs.umd.edu/class/spring2013/cmsc425/oglsample.shtml">OpenGL Sample Program</a>&quot;, describiendo su contenido, c&oacute;mo se obtiene el ejecutable, documentando con capturas el resultado de la ejecuci&oacute;n de los mismos (cuando sea posible) y las posibles acciones que se pueden llevar a cabo por el usuario en cada uno. &nbsp;<br />
+		&nbsp;</p>
+		</li>
+	</ul>
+	</li>
+	<li style="text-align: justify;">De la pr&aacute;ctica 2, apartado &quot;Ejemplo de aplicaci&oacute;n: actividad de localizaci&oacute;n de un puntero l&aacute;ser&rdquo; (1a actividad).<br />
+	&nbsp;</li>
+	<li style="text-align: justify;">De la pr&aacute;ctica 3, apartado &quot;4 Actividades. Ampliar el ejemplo &quot;openal_escena&quot;.<br />
+	&nbsp;</li>
+	<li style="text-align: justify;">De la pr&aacute;ctica 4,&nbsp; apartado &quot;3 Actividades&quot;.<br />
+	&nbsp;</li>
+</ul>
+
+<p style="text-align:justify"><span style="color:null">Fin del porfolio.</span></p>

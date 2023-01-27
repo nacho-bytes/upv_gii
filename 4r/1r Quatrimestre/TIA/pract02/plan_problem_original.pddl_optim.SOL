@@ -1,0 +1,61 @@
+
+; Version LPG-td-1.0
+; Seed 104546337
+; Command line: /cygdrive/w/4o INF/TIA/pract02/lpg-td -o .\taxis.pddl -f .\problem_original.pddl -n 10 
+; Problem problem_original.pddl
+; Time 0.14
+; Search time 0.14
+; Parsing time 0.00
+; Mutex time 0.00
+; Quality 23.70
+
+
+Time 0.14
+
+0.0003:   (LOAD-PASS PASS2 TAXI4 B) [1.0000]
+  (at PASS2 B) -> (in PASS2 TAXI4)
+0.0005:   (REVISE-TAXI TAXI2 A) [2.0000]
+  (pending-trans TAXI2) 0 -> 2
+0.0008:   (FAST-CHARGE-BAT TAXI2 A) [4.0000]
+  (autono-taxi TAXI2) 10 -> 60
+4.0010:   (MOVE-TAXI TAXI2 A D) [5.0000]
+  (at TAXI2 A) -> (at TAXI2 D)
+  (autono-taxi TAXI2) 60 -> 40
+9.0013:   (MOVE-TAXI TAXI2 D F) [5.0000]
+  (at TAXI2 D) -> (at TAXI2 F)
+  (autono-taxi TAXI2) 40 -> 20
+14.0015:   (LOAD-PASS PASS3 TAXI2 F) [1.0000]
+  (at PASS3 F) -> (in PASS3 TAXI2)
+15.0017:   (MOVE-TAXI TAXI2 F D) [5.0000]
+  (at TAXI2 F) -> (at TAXI2 D)
+  (autono-taxi TAXI2) 20 -> 0
+20.0020:   (UNLOAD-PASS PASS3 TAXI2 D) [1.0000]
+  (in PASS3 TAXI2) -> (at PASS3 D)
+  (max-pending-trans) 2 -> 1
+0.0022:   (MOVE-TAXI TAXI3 C B) [1.0000]
+  (at TAXI3 C) -> (at TAXI2 B)
+  (autono-taxi TAXI3) 20 -> 16
+1.0025:   (FAST-CHARGE-BAT TAXI3 B) [4.0000]
+  (autono-taxi TAXI3) 16 -> 66
+5.0027:   (MOVE-TAXI TAXI3 B E) [6.0000]
+  (at TAXI3 B) -> (at TAXI2 E)
+  (autono-taxi TAXI3) 66 -> 42
+11.0030:   (LOAD-PASS PASS5 TAXI3 E) [1.0000]
+  
+12.0033:   (MOVE-TAXI TAXI3 E B) [6.0000]
+18.0035:   (MOVE-TAXI TAXI3 B A) [2.0000]
+20.0037:   (UNLOAD-PASS PASS5 TAXI3 A) [1.0000]
+1.0040:   (MOVE-TAXI TAXI4 B E) [6.0000]
+7.0043:   (UNLOAD-PASS PASS2 TAXI4 E) [1.0000]
+2.0045:   (REVISE-TAXI TAXI1 A) [2.0000]
+0.0047:   (LOAD-PASS PASS4 TAXI5 D) [1.0000]
+0.0050:   (SLOW-CHARGE-BAT TAXI5 D) [8.0000]
+8.0052:   (MOVE-TAXI TAXI5 D E) [8.0000]
+16.0055:   (UNLOAD-PASS PASS4 TAXI5 E) [1.0000]
+4.0058:   (LOAD-PASS PASS1 TAXI1 A) [1.0000]
+4.0060:   (FAST-CHARGE-BAT TAXI1 A) [4.0000]
+8.0063:   (MOVE-TAXI TAXI1 A D) [5.0000]
+13.0065:   (MOVE-TAXI TAXI1 D F) [5.0000]
+18.0068:   (UNLOAD-PASS PASS1 TAXI1 F) [1.0000]
+
+

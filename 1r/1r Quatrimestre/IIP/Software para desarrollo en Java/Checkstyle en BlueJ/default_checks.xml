@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE module PUBLIC
+"-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+"http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<!--
+
+Checkstyle configuration for IIP - PRG subjects (2015),
+DSIC - ETSINF - Universitat Politecnica de Valencia
+
+Some checks changed from those in, and inherited from:
+
+Checkstyle configuration for CITS1001, The University of Wesetern Australia
+
+Rules selected to check for the rules of
+Barnes and Kolling Objects First with Java - Style Guide
+www.bluej.org/objects-first/styleguide.html
+(comments show corresponding rule numbers from the guide)
+
+These rules require Checkstyle 5 or higher.
+The checks have user-friendly warning messages (inspired by PMD)
+To change (other) warning messages use the <messages/> property.
+You will need the key for the rule whose message is to be changed.
+Names of keys can be found in
+src/checkstyle/com/puppycrawl/tools/checkstyle/checks/*/messages.properties
+
+Nov 2011 Rachel Cardell-Oliver The University of Western Australia
+-->
+<module name="Checker">
+    <module name="TreeWalker">
+
+<!-- 1. Naming
+Check conformance to Java Language specification conventions
+see http://checkstyle.sf.net/config_naming.html
+The warning messages have been changed to match PMD's novice-friendly
+format instead of quoting regular expressions for expected format
+-->
+
+    <!-- 1.1 Use meaningful names - no Checkstyle rule -->
+    <!-- 1.2 Class names start with a capital letter -->
+    <module name="TypeName">
+        <message key="name.invalidPattern"
+            value="Class name ''{0}'' should start with a capital letter and use only letters and digits"/>
+    </module>
+    <!-- 1.3 Class names are singular nouns - no Checkstyle rule -->
+    <!-- 1.4  Method and variable names start with lowercase letters -->
+    <module name="MemberName">
+        <message key="name.invalidPattern"
+            value="Instance variable name ''{0}'' should start with a lower case letter and use only letters and digits"/>
+    </module>
+    <module name="MethodName">
+        <message key="name.invalidPattern"
+            value="Method name ''{0}'' should start with a lower case letter and use only letters and digits"/>
+    </module>
+    <module name="ParameterName">
+        <message key="name.invalidPattern"
+           value="Parameter name ''{0}'' should start with a lower case letter and use only letters and digits"/>
+    </module>
+    <module name="LocalVariableName">
+        <message key="name.invalidPattern"
+           value="Local variable name ''{0}'' should start with a lower case letter and use only letters and digits"/>
+    </module>
+     <!-- 1.5 Constants are written in UPPERCASE with underscores to increase readability -->
+    <module name="ConstantName">
+        <message key="name.invalidPattern"
+           value="Constant name ''{0}'' should be all upper case letters, digits and underscores"/>
+    </module>
+
+
+<!-- 2. Layout
+Check blocks and braces see http://checkstyle.sf.net/config_blocks.html
+-->
+    <!-- 2.1 One level of indentation is four spaces AND
+         2.2 All statements within a block are indented one level.
+         Checkstyle defaults are 4 spaces per level, 0 for new line brace
+         Warning: these checks can be irritating so perhaps
+         better achieved using BlueJ auto-layout
+     -->
+    <module name="Indentation"/>
+    <!-- 2.3 Braces for classes, constructors and methods are alone on a line -->
+    <module name="LeftCurly">
+        <property name="option" value="eol"/>
+        <property name="tokens" value="CLASS_DEF,INTERFACE_DEF,CTOR_DEF,METHOD_DEF"/>
+    </module>
+    <!-- 2.4 Braces for code blocks open at the end of the line -->
+    <module name="LeftCurly">
+        <property name="option" value="eol"/>
+        <property name="tokens" value="LITERAL_CATCH,LITERAL_DO,LITERAL_ELSE,LITERAL_FINALLY,
+        LITERAL_FOR,LITERAL_IF,LITERAL_SWITCH,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_WHILE"/>
+    </module>
+    <!-- 2.5 Always use braces in control structures -->
+    <module name="NeedBraces"/>
+    <!-- no empty blocks, but don't rule out a block containing only
+         a comment used during code development
+    -->
+    <module name="EmptyBlock">
+        <property name="option" value="text"/>
+    </module>
+    <!-- rules for safe switch statements -->
+    <module name="MissingSwitchDefault"/>
+    <module name="DefaultComesLast"/>
+
+    <!-- IIP-PRG:: Checks for whitespace (instead of 2.6 & 2.7) -->
+    <!-- See http://checkstyle.sf.net/config_whitespace.html -->
+    <module name="EmptyForIteratorPad"/>
+	<module name="GenericWhitespace"/>
+	<module name="MethodParamPad"/>
+	<module name="NoWhitespaceAfter"/>
+	<module name="NoWhitespaceBefore"/>
+	<module name="OperatorWrap"/>
+	<module name="ParenPad"/>
+	<module name="TypecastParenPad"/>
+	<module name="WhitespaceAfter"/>
+	<module name="WhitespaceAround"/>
+	
+    <!-- 2.8 Use a blank line between methods (and constructors)  - no Checkstyle rule -->
+
+    <!-- IIP-PRG: Miscellaneous other checks (added)   -->
+    <!-- See http://checkstyle.sf.net/config_misc.html -->
+	<module name="ArrayTypeStyle"/>
+
+<!-- 3. Documentation
+Javadoc conventions see http://checkstyle.sf.net/config_javadoc.html
+PLus regexpt check that default Javadoc header has been completed
+This check looks for the default comments from BlueJ's new class template
+adapted from the Virginia Tech checkstyle ruleset
+-->
+
+    <!-- 3.1 Every class has a class comment at the top -->
+        <module name="JavadocType"/>
+    <!-- 3.1 - general desciption of the class -->
+    <module name="Regexp">
+        <property name="format"
+              value="Write a description of"/>
+        <property name="illegalPattern" value="true"/>
+        <property name="message" value="Javadoc: Please replace the default comment
+        with your own descriptive comment for this class"/>
+    </module>
+    <!-- 3.1 - author's name(s) -->
+    <module name="Regexp">
+        <property name="format"
+              value="(your name)"/>
+        <property name="illegalPattern" value="true"/>
+        <property name="message" value="Javadoc: Please replace the default comment
+        with your own name(s) after the @author tag"/>
+    </module>
+    <!-- 3.1 - version number or date -->
+    <module name="Regexp">
+        <property name="format"
+            value="(a version number or a date)"/>
+        <property name="illegalPattern" value="true"/>
+        <property name="message" value="Javadoc: Please replace the default comment
+        with the current date after the @version tag"/>
+    </module>
+    <!--OPTIONAL IIP-PRG: 3.2 Every method has a method comment  -->
+    <!--although recommended we do not insist on @param, @return, @throws tags
+        since using meaningful names is probably enough -->
+    <!--<module name="JavadocMethod">
+        <property name="allowMissingParamTags" value="false"/>
+        <property name="allowMissingReturnTag" value="false"/>
+        <property name="allowMissingThrowsTags" value="false"/>
+    </module> -->
+    
+    <!-- 3.3 Class and method comments are Javadoc readable - see above -->
+    <!-- 3.4 Code comments (only) where necessary - no Checkstyle rule -->
+
+
+<!-- 4. Language use restrictions
+Check Java conventions for declaration and modifier orders
+-->
+        <!-- 4.1 Order of declarations: The elements of a class definition appear (if present)
+        in the following order: package statement; import statements;
+        class comment; class header; field definitions; constructors; methods. -->
+        <module name="DeclarationOrder"/>
+            <!-- TODO why did I have this? <property name="ignoreModifiers" value="true"/> -->
+
+        <!-- 4.2 Fields may not be public (except for static final fields ie constants) -->
+        <!-- 4.3 Always use an access modifier public, private or protected
+             (note this Checkstyle rule only checks fields not methods) -->
+        <module name="VisibilityModifier">
+            <property name="protectedAllowed" value="true"/>
+        </module>
+
+        <!--4.4 Import classes separately -->
+        <module name="AvoidStarImport"/>
+        <!-- TODO consider writing checkstyle rules for 4.5, 4.6 and 4.7 -->
+        <!-- 4.5 Always include a constructor even if the body is empty - no Checkstyle rule -->
+        <!-- 4.6 Always include superclass constructor call -  - no Checkstyle rule -->
+        <!-- 4.7 Initialise all fields in the constructor - no Checkstyle rule -->
+
+
+
+<!-- 5. Code Idioms -->
+    <!-- 5.1 User iterators with collections - no Checkstyle rule -->
+
+
+<!-- Common coding problems
+see http://checkstyle.sf.net/config_coding.html
+-->
+
+    <!-- 6.1 Usually, it is best not to have a local variable or
+         a parameter that shadows a field that is defined in the same class.-->
+
+    <!-- Avoiding HiddenField is a suggestion only and should sometimes be ignored.
+         But code is easier to read and write for novices if local vars and
+         param names don't shadow instance var names -->
+    <module name="HiddenField">
+        <message key="hidden.field"
+           value="Suggestion: in most cases avoid using a local variable or parameter name ''{0}'' that shadows the ''{0}'' instance variable"/>
+    </module>
+
+    <!-- 6.2 Do not assign values to method parameters within methods -->
+    <module name="ParameterAssignment">
+          <message key="parameter.assignment"
+           value="Suggestion: avoid re-assignment to the parameter ''{0}''"/>
+    </module>
+
+    <!-- 6.3 Restrict nested boolean operators (&&, ||, &, | and ^)
+             to a depth of no more than 3.-->
+    <module name="BooleanExpressionComplexity">
+        <message key="booleanExpressionComplexity"
+           value="Suggestion: simplify this boolean expression if possible (complexity here is ''{0}'' but recommended is ''{0}'')"/>
+    </module>
+
+     <!-- 6.4 Simplify boolean expressions such as (b == true) to (b) etc. -->
+    <module name="SimplifyBooleanExpression">
+        <message key="simplify.expression"
+           value="Suggestion: this boolean expression can be simplified. For example, avoid unnecessary comparisons such as (b==true)"/>
+    </module>
+
+     <!-- 6.5 Avoid unnecessary if..then..else statements when returning a boolean. -->
+    <module name="SimplifyBooleanReturn">
+        <message key="simplify.boolreturn"
+           value="Suggestion: Avoid unnecessary if..then..else statements when returning a boolean"/>
+    </module>
+
+    <!-- 6.6 Avoid modifying loop control variables inside a for block. -->
+    <module name="ModifiedControlVariable"/>
+    <!-- 6.7 Avoid assignments in subexpressions
+         such as String s = Integer.toString(i = 2); -->
+    <module name="InnerAssignment"/>
+    <!-- 6.8 Avoid in line conditionals in subexpressions such as
+         String s = (x % 2 == 0) ? "even" : "odd"; -->
+    <module name="AvoidInlineConditionals"/>
+
+<!-- enforce default length limits -->
+    <module name="LineLength"/>
+    <module name="MethodLength"/>
+
+
+<!-- 6.9 Optional: Final versions of code should not include System.out.println
+         statements (or .err or print) usually left over from debugging.-->
+
+<!--
+System.out.print debug statements.
+This check is commented out for now because it is controversial:
+for ex, many Barnes and Kolling exercises use print statements
+However, this rule may be reinstated for student project submissions
+
+Production code should not include System.out.print statements
+This regexp check identifies System.out.print or System.err.print or println
+and suggests such statements should be either commented out or
+removed before code is submitted
+
+
+  <module name="Regexp">
+      <property name="format" value="System\.(out)|(err)\.print"/>
+      <property name="illegalPattern" value="true"/>
+      <property name="ignoreComments" value="true"/>
+      <property name="message" value="System.out.print: It is good practice
+      to remove (or comment out) debug statements from production code"/>
+  </module>
+-->
+
+
+</module>
+</module>
+
+
+
+
+

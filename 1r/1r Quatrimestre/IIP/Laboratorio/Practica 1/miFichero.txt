@@ -1,0 +1,17 @@
+Con esta primera práctica se pretende que el alumno se familiarice con 
+todos los aspectos del entorno de trabajo que utilizará a lo largo del 
+curso. En concreto, el alumno aprenderá a:
+
+- Utilizar los comandos básicos del sistema operativo Linux.
+- Organizar sus directorios de trabajo.
+- Utilizar un editor de textos como Emacs.
+- Utilizar los comandos para la compilación y ejecución de un programa 
+  Java desde la línea de comandos del sistema.
+- Utilizar el entorno integrado de programación BlueJ para editar, 
+  compilar y ejecutar un programa Java.
+
+El alumno deberá haber leído de forma detallada la totalidad de la práctica, 
+para poder centrarse en profundidad en la parte que hay que desarrollar en 
+el laboratorio. Dado que es la primera práctica, no se requerirán conocimientos 
+previos.
+

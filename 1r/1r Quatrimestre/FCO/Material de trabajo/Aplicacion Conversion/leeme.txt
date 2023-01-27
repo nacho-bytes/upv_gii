@@ -1,0 +1,2 @@
+ Para utilizar la aplicación de conversión  es necesario, además del ejecutable y el fichero de ayuda, tener instalado el framework 2.0 del visualstudio.NET. Debido a que PoliformaT no admite ficheros de más de 20M, no hemos podido dejar en la Web el instalador del framework. Puede obtenerse en: http://www.microsoft.com/downloads/details.aspx?displaylang=es&FamilyID=262D25E3-F589-4842-8157-034D1E7CF3A3
+Nota: el fichero de ayuda debe estar en la misma carpeta que el ejecutable.

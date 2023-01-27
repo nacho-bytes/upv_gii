@@ -1,0 +1,9 @@
+* Schematics Netlist *
+
+
+
+R_R1         Vs $N_0001  1k  
+R_R2         $N_0003 $N_0002  220k  
+V_V1         $N_0001 0 5V
+Q_Q1         Vs $N_0002 0 QbreakN 
+V_V2         $N_0003 0 5V

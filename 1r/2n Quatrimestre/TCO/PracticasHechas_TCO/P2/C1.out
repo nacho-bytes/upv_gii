@@ -1,0 +1,148 @@
+
+**** 05/14/20 12:39:33 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Iaki Diez Lambies\Desktop\Prcticas TCO\Prctica 2\C1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Thu May 14 12:39:33 2020
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "C1.net"
+
+**** INCLUDING C1.net ****
+* Schematics Netlist *
+
+
+
+R_R1         S $N_0001  1k  
+V_V2         $N_0002 0 5V
+V_V1         $N_0001 0 5V
+D_D1         S $N_0002 D1N4148 
+D_D2         S 0 D1N4148 
+
+**** RESUMING C1.cir ****
+.INC "C1.als"
+
+
+
+**** INCLUDING C1.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=S 2=$N_0001 )
+V_V2            V2(+=$N_0002 -=0 )
+V_V1            V1(+=$N_0001 -=0 )
+D_D1            D1(1=S 2=$N_0002 )
+D_D2            D2(1=S 2=0 )
+_    _(S=S)
+.ENDALIASES
+
+
+**** RESUMING C1.cir ****
+.probe
+
+
+.END
+
+**** 05/14/20 12:39:33 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Iaki Diez Lambies\Desktop\Prcticas TCO\Prctica 2\C1.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 05/14/20 12:39:33 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Iaki Diez Lambies\Desktop\Prcticas TCO\Prctica 2\C1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    S)     .6772  ($N_0001)    5.0000                   ($N_0002)    5.0000    
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -6.013E-09
+    V_V1        -4.323E-03
+
+    TOTAL POWER DISSIPATION   2.16E-02  WATTS
+
+
+**** 05/14/20 12:39:33 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Iaki Diez Lambies\Desktop\Prcticas TCO\Prctica 2\C1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         D_D1        D_D2      
+MODEL        D1N4148     D1N4148   
+ID          -6.01E-09    4.32E-03 
+VD          -4.32E+00    6.77E-01 
+REQ          8.69E+09    1.14E+01 
+CAP          1.88E-12    1.02E-09 
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

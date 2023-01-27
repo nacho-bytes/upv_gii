@@ -1,0 +1,111 @@
+
+**** 05/16/20 13:47:55 *********** Evaluation PSpice (Nov 1999) **************
+
+ * W:\1r INF\2n Quatrimestre\TCO\Practicas_TCO\P4\C1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat May 16 13:47:55 2020
+
+
+
+** Analysis setup **
+.DC LIN V_VGS 0 5 0.1 
+.LIB "W:\1r INF\2n Quatrimestre\TCO\Practicas_TCO\P4\C1.lib"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "C1.net"
+
+**** INCLUDING C1.net ****
+* Schematics Netlist *
+
+
+
+V_VDS         $N_0001 0 10V
+V_VGS         $N_0002 0 0V
+M_M1         $N_0001 $N_0002 0 0 MbreakN-X  
++ L=1u  
++ W=2u         
+
+**** RESUMING C1.cir ****
+.INC "C1.als"
+
+
+
+**** INCLUDING C1.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_VDS           VDS(+=$N_0001 -=0 )
+V_VGS           VGS(+=$N_0002 -=0 )
+M_M1            M1(d=$N_0001 g=$N_0002 s=0 s=0 )
+.ENDALIASES
+
+
+**** RESUMING C1.cir ****
+.probe
+
+
+.END
+
+**** 05/16/20 13:47:55 *********** Evaluation PSpice (Nov 1999) **************
+
+ * W:\1r INF\2n Quatrimestre\TCO\Practicas_TCO\P4\C1.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakN-X       
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    2            
+          KP    2.000000E-03 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .05
+

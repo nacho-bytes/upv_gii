@@ -1,0 +1,9 @@
+1. Instalar VirtualBox: www.virtualbox.org
+
+2. Descargar "Windows XP Mode PSpice.zip" y descomprimirlo, se generará la carpeta "Windowx XP Mode PSpice"
+
+3. Abrir la carpeta "\\zuria.cc.upv.es\disca\Asignaturas\Alumnos\gii-tco\Windows XP Mode PSpice" y hacer doble click en el archivo "Windows XP Mode PSpice.vbox" (tiene el icono de cubo azul)
+
+4. PSpice está disponible en el escritorio, los diseños se han de guardar en C:\TCO, evitando caracteres no ASCII y espacios en blanco en el nombre de archivo.
+
+NOTA. La carpeta C:\TCO se puede copiar en el host con drag-and-drop como copia de seguridad.

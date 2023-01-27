@@ -1,0 +1,126 @@
+
+**** 05/14/20 12:46:41 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Iaki Diez Lambies\Desktop\Prcticas TCO\Prctica 2\C2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Thu May 14 12:46:41 2020
+
+
+
+** Analysis setup **
+.tran 10us 2000us
+.STMLIB "C2.stl"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "C2.net"
+
+**** INCLUDING C2.net ****
+* Schematics Netlist *
+
+
+
+D_D2         0 Vs D1N4148 
+D_D1         Vs $N_0001 D1N4148 
+V_V2         $N_0001 0 5V
+R_R1         $N_0002 Vs  1k  
+V_V3         $N_0002 0  
++SIN 0V 10V 1kHz 0 0 0
+
+**** RESUMING C2.cir ****
+.INC "C2.als"
+
+
+
+**** INCLUDING C2.als ****
+* Schematics Aliases *
+
+.ALIASES
+D_D2            D2(1=0 2=Vs )
+D_D1            D1(1=Vs 2=$N_0001 )
+V_V2            V2(+=$N_0001 -=0 )
+R_R1            R1(1=$N_0002 2=Vs )
+V_V3            V3(+=$N_0002 -=0 )
+_    _(Vs=Vs)
+.ENDALIASES
+
+
+**** RESUMING C2.cir ****
+.probe
+
+
+.END
+
+**** 05/14/20 12:46:41 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Iaki Diez Lambies\Desktop\Prcticas TCO\Prctica 2\C2.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 05/14/20 12:46:41 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Iaki Diez Lambies\Desktop\Prcticas TCO\Prctica 2\C2.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   Vs) 6.162E-06  ($N_0001)    5.0000                   ($N_0002)    0.0000    
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -6.162E-09
+    V_V3         6.162E-09
+
+    TOTAL POWER DISSIPATION   3.08E-08  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

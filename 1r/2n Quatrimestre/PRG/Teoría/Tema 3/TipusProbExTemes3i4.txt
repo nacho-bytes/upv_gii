@@ -1,0 +1,20 @@
+Tema 3 exclusivament
+P2 - Curs 15/16: m1
+RecP2 - Curs 15/16: m1
+P2 - Curs 11/12: llegirInt
+
+Tema 3 i Tema 4
+P2 - Curs 18/19: sumInt
+RecP2 - Curs 18/19: filtraErrors 
+P2 - Curs 17/18: fromArrayToTextFile
+RecP2 - Curs 17/18: fileToStack
+P2 - Curs 16/17: fitxNou
+RecP2 - Curs 16/17: lligISuma
+P2 - Curs 14/15: sumar
+RecP2 - Curs 14/15: imc
+P2 - Curs 13/14: escriuAmbMajuscules
+RecP2 - Curs 13/14: estaEn
+RecP2 - Curs 12/13: copiar
+P2 - Curs 11/12: nouFitxer 
+RecP2 - Curs 11/12: Cat
+RecP2 - Curs 11/12: startsWith(String)

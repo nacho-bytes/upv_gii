@@ -1,0 +1,192 @@
+<?xml version="1.0" standalone="yes" ?>
+<grafo>
+<tipoGrafo> "0" </tipoGrafo>
+<nodos><nodo>
+<nombre> "Colosus" </nombre>
+<posicion> (167,58) </posicion>
+</nodo>
+<nodo>
+<nombre> "Inferno" </nombre>
+<posicion> (195,222) </posicion>
+</nodo>
+<nodo>
+<nombre> "Titanide" </nombre>
+<posicion> (294,258) </posicion>
+</nodo>
+<nodo>
+<nombre> "Espectaculo" </nombre>
+<posicion> (409,148) </posicion>
+</nodo>
+<nodo>
+<nombre> "Cafeteria" </nombre>
+<posicion> (254,80) </posicion>
+</nodo>
+<nodo>
+<nombre> "Laberinto" </nombre>
+<posicion> (162,279) </posicion>
+</nodo>
+<nodo>
+<nombre> "Furia" </nombre>
+<posicion> (70,324) </posicion>
+</nodo>
+<nodo>
+<nombre> "Tornado" </nombre>
+<posicion> (117,405) </posicion>
+</nodo>
+<nodo>
+<nombre> "Synkope" </nombre>
+<posicion> (390,427) </posicion>
+</nodo>
+<nodo>
+<nombre> "Puerto" </nombre>
+<posicion> (590,70) </posicion>
+</nodo>
+<nodo>
+<nombre> "Cuca Park" </nombre>
+<posicion> (610,145) </posicion>
+</nodo>
+<nodo>
+<nombre> "Cine5D" </nombre>
+<posicion> (631,413) </posicion>
+</nodo>
+</nodos>
+<aristas><arista>
+<nodo1> "0" </nodo1>
+<nodo2> "1" </nodo2>
+<peso> "8.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "0" </nodo1>
+<nodo2> "6" </nodo2>
+<peso> "20.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "1" </nodo1>
+<nodo2> "2" </nodo2>
+<peso> "15.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "1" </nodo1>
+<nodo2> "4" </nodo2>
+<peso> "9.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "1" </nodo1>
+<nodo2> "5" </nodo2>
+<peso> "9.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "2" </nodo1>
+<nodo2> "3" </nodo2>
+<peso> "10.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "2" </nodo1>
+<nodo2> "4" </nodo2>
+<peso> "10.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "2" </nodo1>
+<nodo2> "5" </nodo2>
+<peso> "25.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "2" </nodo1>
+<nodo2> "7" </nodo2>
+<peso> "8.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "2" </nodo1>
+<nodo2> "8" </nodo2>
+<peso> "11.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "3" </nodo1>
+<nodo2> "4" </nodo2>
+<peso> "30.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "3" </nodo1>
+<nodo2> "8" </nodo2>
+<peso> "12.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "3" </nodo1>
+<nodo2> "9" </nodo2>
+<peso> "11.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "3" </nodo1>
+<nodo2> "10" </nodo2>
+<peso> "30.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "3" </nodo1>
+<nodo2> "11" </nodo2>
+<peso> "25.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "4" </nodo1>
+<nodo2> "9" </nodo2>
+<peso> "25.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "5" </nodo1>
+<nodo2> "6" </nodo2>
+<peso> "7.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "5" </nodo1>
+<nodo2> "7" </nodo2>
+<peso> "16.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "7" </nodo1>
+<nodo2> "8" </nodo2>
+<peso> "28.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "7" </nodo1>
+<nodo2> "10" </nodo2>
+<peso> "45.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "8" </nodo1>
+<nodo2> "11" </nodo2>
+<peso> "11.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "9" </nodo1>
+<nodo2> "10" </nodo2>
+<peso> "3.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "10" </nodo1>
+<nodo2> "11" </nodo2>
+<peso> "5.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+</aristas> 
+ </grafo>

@@ -1,0 +1,10 @@
+* Schematics Netlist *
+
+
+
+V_Vi         $N_0001 0 0V
+V_VDD         $N_0002 0 5V
+M_M1         $N_0003 $N_0001 0 0 MbreakN-X  
++ L=1u  
++ W=2u         
+R_RD         $N_0003 $N_0002  90k  

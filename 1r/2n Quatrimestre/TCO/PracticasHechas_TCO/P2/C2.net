@@ -1,0 +1,10 @@
+* Schematics Netlist *
+
+
+
+D_D2         0 Vs D1N4148 
+D_D1         Vs $N_0001 D1N4148 
+V_V2         $N_0001 0 5V
+R_R1         $N_0002 Vs  1k  
+V_V3         $N_0002 0  
++SIN 0V 10V 1kHz 0 0 0

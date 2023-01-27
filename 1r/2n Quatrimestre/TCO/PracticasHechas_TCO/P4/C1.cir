@@ -1,0 +1,23 @@
+* W:\1r INF\2n Quatrimestre\TCO\Practicas_TCO\P4\C1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sat May 16 13:47:55 2020
+
+
+
+** Analysis setup **
+.DC LIN V_VGS 0 5 0.1 
+.LIB "W:\1r INF\2n Quatrimestre\TCO\Practicas_TCO\P4\C1.lib"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "C1.net"
+.INC "C1.als"
+
+
+.probe
+
+
+.END

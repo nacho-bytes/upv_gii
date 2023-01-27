@@ -1,0 +1,16 @@
+This first lab activity has as objective that the student gets familiar
+with the different elements of the working environment that will be used
+during the course. Specifically, the student will learn to:
+
+- Employ basic commands of the Linux operating system
+- Organise its working directories
+- Use a text editor, like Emacs
+- Employ compilation and execution commans for a Java program
+  from the command line
+- Employ the Integrated Development Environment (IDE) BlueJ for
+  editing, compiling, and executing a Java program
+
+The student must read in detail the statement of the lab activity,
+in order to get focused into the part that is going to be developed
+in the lab. Since it is the first lab activity, no previous knowledge
+is required.

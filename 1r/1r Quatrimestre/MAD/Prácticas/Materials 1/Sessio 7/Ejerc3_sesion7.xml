@@ -1,0 +1,232 @@
+<?xml version="1.0" standalone="yes" ?>
+<grafo>
+<tipoGrafo> "0" </tipoGrafo>
+<nodos><nodo>
+<nombre> "v1" </nombre>
+<posicion> (154,158) </posicion>
+</nodo>
+<nodo>
+<nombre> "v2" </nombre>
+<posicion> (282,162) </posicion>
+</nodo>
+<nodo>
+<nombre> "v3" </nombre>
+<posicion> (161,272) </posicion>
+</nodo>
+<nodo>
+<nombre> "v4" </nombre>
+<posicion> (289,270) </posicion>
+</nodo>
+<nodo>
+<nombre> "v5" </nombre>
+<posicion> (325,126) </posicion>
+</nodo>
+<nodo>
+<nombre> "v6" </nombre>
+<posicion> (122,126) </posicion>
+</nodo>
+<nodo>
+<nombre> "v7" </nombre>
+<posicion> (114,308) </posicion>
+</nodo>
+<nodo>
+<nombre> "v8" </nombre>
+<posicion> (345,311) </posicion>
+</nodo>
+<nodo>
+<nombre> "v9" </nombre>
+<posicion> (219,136) </posicion>
+</nodo>
+<nodo>
+<nombre> "v10" </nombre>
+<posicion> (316,214) </posicion>
+</nodo>
+<nodo>
+<nombre> "v11" </nombre>
+<posicion> (230,295) </posicion>
+</nodo>
+<nodo>
+<nombre> "v12" </nombre>
+<posicion> (130,208) </posicion>
+</nodo>
+<nodo>
+<nombre> "v13" </nombre>
+<posicion> (223,74) </posicion>
+</nodo>
+<nodo>
+<nombre> "v14" </nombre>
+<posicion> (371,214) </posicion>
+</nodo>
+<nodo>
+<nombre> "v15" </nombre>
+<posicion> (234,352) </posicion>
+</nodo>
+<nodo>
+<nombre> "v16" </nombre>
+<posicion> (80,211) </posicion>
+</nodo>
+</nodos>
+<aristas><arista>
+<nodo1> "0" </nodo1>
+<nodo2> "1" </nodo2>
+<peso> "2.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "0" </nodo1>
+<nodo2> "2" </nodo2>
+<peso> "5.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "0" </nodo1>
+<nodo2> "12" </nodo2>
+<peso> "3.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "0" </nodo1>
+<nodo2> "15" </nodo2>
+<peso> "5.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "1" </nodo1>
+<nodo2> "3" </nodo2>
+<peso> "8.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "1" </nodo1>
+<nodo2> "12" </nodo2>
+<peso> "2.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "1" </nodo1>
+<nodo2> "13" </nodo2>
+<peso> "1.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "2" </nodo1>
+<nodo2> "3" </nodo2>
+<peso> "5.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "2" </nodo1>
+<nodo2> "14" </nodo2>
+<peso> "3.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "2" </nodo1>
+<nodo2> "15" </nodo2>
+<peso> "6.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "3" </nodo1>
+<nodo2> "13" </nodo2>
+<peso> "4.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "3" </nodo1>
+<nodo2> "14" </nodo2>
+<peso> "1.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "4" </nodo1>
+<nodo2> "8" </nodo2>
+<peso> "8.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "4" </nodo1>
+<nodo2> "9" </nodo2>
+<peso> "5.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "5" </nodo1>
+<nodo2> "8" </nodo2>
+<peso> "6.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "5" </nodo1>
+<nodo2> "11" </nodo2>
+<peso> "3.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "6" </nodo1>
+<nodo2> "10" </nodo2>
+<peso> "2.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "6" </nodo1>
+<nodo2> "11" </nodo2>
+<peso> "5.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "7" </nodo1>
+<nodo2> "9" </nodo2>
+<peso> "3.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "7" </nodo1>
+<nodo2> "10" </nodo2>
+<peso> "9.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "8" </nodo1>
+<nodo2> "9" </nodo2>
+<peso> "1.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "8" </nodo1>
+<nodo2> "10" </nodo2>
+<peso> "2.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "8" </nodo1>
+<nodo2> "11" </nodo2>
+<peso> "4.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "8" </nodo1>
+<nodo2> "12" </nodo2>
+<peso> "9.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "9" </nodo1>
+<nodo2> "10" </nodo2>
+<peso> "6.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "10" </nodo1>
+<nodo2> "11" </nodo2>
+<peso> "1.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+<arista>
+<nodo1> "10" </nodo1>
+<nodo2> "14" </nodo2>
+<peso> "1.0" </peso>
+<tipo> "0" </tipo>
+</arista>
+</aristas> 
+ </grafo>

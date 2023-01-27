@@ -1,0 +1,22 @@
+* C:\Users\Iñaki Diez Lambies\Desktop\Prácticas TCO\Pràctica 2\C1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Thu May 14 12:39:33 2020
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "C1.net"
+.INC "C1.als"
+
+
+.probe
+
+
+.END

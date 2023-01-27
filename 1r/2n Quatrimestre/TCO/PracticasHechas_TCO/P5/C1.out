@@ -1,0 +1,117 @@
+
+**** 05/16/20 16:54:16 *********** Evaluation PSpice (Nov 1999) **************
+
+ * W:\1r INF\2n Quatrimestre\TCO\Practicas_TCO\P5\C1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat May 16 16:54:16 2020
+
+
+
+** Analysis setup **
+.DC LIN V_Vi 0 5 0.01 
+.LIB "W:\1r INF\2n Quatrimestre\TCO\Practicas_TCO\P5\C1.lib"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "C1.net"
+
+**** INCLUDING C1.net ****
+* Schematics Netlist *
+
+
+
+V_Vi         $N_0001 0 0V
+V_VDD         $N_0002 0 5V
+M_M1         $N_0003 $N_0001 0 0 MbreakN-X  
++ L=1u  
++ W=2u         
+R_RD         $N_0003 $N_0002  90k  
+
+**** RESUMING C1.cir ****
+.INC "C1.als"
+
+
+
+**** INCLUDING C1.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_Vi            Vi(+=$N_0001 -=0 )
+V_VDD           VDD(+=$N_0002 -=0 )
+M_M1            M1(d=$N_0003 g=$N_0001 s=0 s=0 )
+R_RD            RD(1=$N_0003 2=$N_0002 )
+.ENDALIASES
+
+
+**** RESUMING C1.cir ****
+.probe
+
+
+.END
+
+Unable to find index file C1.ind for library file C1.lib
+Making new index file C1.ind for library file C1.lib
+Index has 1 entries from 1 file(s).
+
+**** 05/16/20 16:54:16 *********** Evaluation PSpice (Nov 1999) **************
+
+ * W:\1r INF\2n Quatrimestre\TCO\Practicas_TCO\P5\C1.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakN-X       
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    1            
+          KP   50.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .16
+

@@ -1,0 +1,25 @@
+Numèrics - després Sessió 2
+RecP1 - Curs 18/19: xifres
+RecP1 - Curs 12/13: basePossible
+P1 - Curs 11/12: sequencies
+RecP1 - Curs 11/12: escriu
+
+Arrays - Recorregut - després Sessió 3
+P1 - Curs 17/18: comptarPar
+P1 - Curs 16/17: multiplesX
+RecP1 - Curs 16/17: creaSuccessioTriangulars
+RecP1 - Curs 12/13: numMajors
+
+Arrays - Cerca seqüencial - després Sessió 4
+P1 - Curs 18/19: palindromeKey
+P1 - Curs 15/16: sumaMenors
+RecP1 - Curs 15/16: esFibo
+P1 - Curs 14/15: parellsICreixents
+P1 - Curs 13/14: sumaCapicua
+RecP1 - Curs 13/14: es_fibo
+P1 - Curs 12/13: parellaSim
+P1 - Curs 11/12: metode
+RecP1 - Curs 11/12: geometrica
+
+Arrays - Cerca binària - després Sessió 5
+RecP1 - Curs 17/18: intercepts 

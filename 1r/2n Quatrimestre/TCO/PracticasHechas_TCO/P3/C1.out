@@ -1,0 +1,161 @@
+
+**** 05/14/20 13:05:59 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Iaki Diez Lambies\Desktop\Prcticas TCO\Prctica 3\C1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Thu May 14 13:05:55 2020
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "C1.net"
+
+**** INCLUDING C1.net ****
+* Schematics Netlist *
+
+
+
+R_R1         Vs $N_0001  1k  
+R_R2         $N_0003 $N_0002  220k  
+V_V1         $N_0001 0 5V
+Q_Q1         Vs $N_0002 0 QbreakN 
+V_V2         $N_0003 0 5V
+
+**** RESUMING C1.cir ****
+.INC "C1.als"
+
+
+
+**** INCLUDING C1.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=Vs 2=$N_0001 )
+R_R2            R2(1=$N_0003 2=$N_0002 )
+V_V1            V1(+=$N_0001 -=0 )
+Q_Q1            Q1(c=Vs b=$N_0002 e=0 )
+V_V2            V2(+=$N_0003 -=0 )
+_    _(Vs=Vs)
+.ENDALIASES
+
+
+**** RESUMING C1.cir ****
+.probe
+
+
+.END
+
+**** 05/14/20 13:05:59 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Iaki Diez Lambies\Desktop\Prcticas TCO\Prctica 3\C1.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 05/14/20 13:05:59 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Iaki Diez Lambies\Desktop\Prcticas TCO\Prctica 3\C1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   Vs)    3.0868  ($N_0001)    5.0000                   ($N_0002)     .7910    
+
+($N_0003)    5.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.913E-03
+    V_V2        -1.913E-05
+
+    TOTAL POWER DISSIPATION   9.66E-03  WATTS
+
+
+**** 05/14/20 13:05:59 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Iaki Diez Lambies\Desktop\Prcticas TCO\Prctica 3\C1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q1      
+MODEL        QbreakN   
+IB           1.91E-05 
+IC           1.91E-03 
+VBE          7.91E-01 
+VBC         -2.30E+00 
+VCE          3.09E+00 
+BETADC       1.00E+02 
+GM           7.40E-02 
+RPI          1.35E+03 
+RX           0.00E+00 
+RO           1.00E+12 
+CBE          0.00E+00 
+CBC          0.00E+00 
+CJS          0.00E+00 
+BETAAC       1.00E+02 
+CBX/CBX2     0.00E+00 
+FT/FT2       1.18E+18 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

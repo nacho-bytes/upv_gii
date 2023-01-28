@@ -11,3 +11,6 @@ Bienvenido a mi repositorio de toda la carrera. Aquí encontrarás **tooooooodo*
 Me gustaría aprovechar para recordar que este repositorio debe ser simplemente una referencia para cuando vayas perdido y no sepas cómo o seguir o en el caso de que encuentras recursos que no tienes disponibles ahora misma. Recuerda, solo eso que nos conocimos :)
 
 Espero que te siga de ayuda y lo compartas en cualquiera que le pueda ser de ayuda también. Una estrellita sería de agradecer, ¡nos vemos por la facultad!
+
+## Acknowledgements
+@JoanJLlopis Per els dos primers anys i mig mano a mano fent els apunts que ara podeu vore :D
